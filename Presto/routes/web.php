@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[AnnouncementController::class,'homepage'])->name('homepage');
+
+// ANNUNCI
+ Route::get('/announcement/index',[AnnouncementController::class,'index'])->name('announcement.index');
+ Route::get('/announcement/create',[AnnouncementController::class,'create'])->name('announcement.create')->middleware('auth');
+ Route::post('/announcement/store',[AnnouncementController::class,'store'])->name('announcement.store')->middleware('auth');

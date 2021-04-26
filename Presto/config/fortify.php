@@ -134,7 +134,11 @@ return [
     'features' => [
         Features::registration(),
         // Features::resetPasswords(),
+<<<<<<< HEAD
         // Features::emailVerification(),
+=======
+        // // Features::emailVerification(),
+>>>>>>> b984a1f80e567b90dd62b51a3799e69a574745b9
         // Features::updateProfileInformation(),
         // Features::updatePasswords(),
         // Features::twoFactorAuthentication([
