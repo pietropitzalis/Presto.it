@@ -17,6 +17,7 @@
                             <h3>{{$announcement->title}}</h3>
                             <p>{{$announcement->description}}</p>
                             <p>{{$announcement->price}}</p>
+                            <p>Annuncio di: {{$announcement->user->name}}</p>
                             <p>Creato il: {{$announcement->created_at->format('d-m-Y- H:i:s')}}</p>
                           <a href="#" class="btn btn-primary">Vai al dettaglio</a>
                         </div>
