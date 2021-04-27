@@ -34,10 +34,10 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Category $category)
+    public function create()
     {
-        $category= Category::all();
-        return view('announcement.create',compact('category'));
+        $categories= Category::all();
+        return view('announcement.create',compact('categories'));
 
 
     }
