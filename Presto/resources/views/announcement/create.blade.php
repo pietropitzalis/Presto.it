@@ -34,8 +34,6 @@
               @endforeach
               
             </select>
-            <button class="btn btn-warning " type="submit">inserisci</button>
-          </form>
           
         </div>
 
@@ -49,6 +47,6 @@
             <label for="price" class="form-label">Prezzo</label>
             <input type="text" name="price" class="form-control" id="price" >
           </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <button class="btn btn-warning " type="submit">inserisci</button>
       </form>
 </x-layout>
