@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use App\Http\Requests\AnnouncementReq;
 
 class AnnouncementController extends Controller
 {
@@ -22,12 +23,19 @@ class AnnouncementController extends Controller
 
     public function index()
     {
-        $announcements=Announcement::all();
+        $announcements=Announcement::orderBy('created_at', 'desc')->take(5)->get();
         return view('announcement.index',compact('announcements'));
     }
 
+    public function announcementByCategory($name , $category_id){
+       $category = Category::find($category_id);
+       $announcements = $category->announcement()->orderBy('created_at', 'desc')->paginate(5);
+       return view('announcement.cat',compact('category', 'announcements'));
+    }
+
     public function homepage () {
-        return view('welcome');
+        $categories= Category::all();
+        return view('welcome',compact('categories'));
     }
     /**
      * Show the form for creating a new resource.
@@ -48,16 +56,25 @@ class AnnouncementController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AnnouncementReq $request)
     {
-        $announcement=Announcement::create([
-            'title'=>$request->title,
-            'description'=>$request->description,
-            // 'description'=>$request->description,
-            'img'=>$request->file('img')->store('public/img'),
-            'price'=>$request->price,
-            'category_id'=>$request->category,
-        ]);
+        if ($request->file('img')) {
+            
+            $announcement=Announcement::create([
+                'title'=>$request->title,
+                'description'=>$request->description,
+                'img'=>$request->file('img')->store('public/img'),
+                'price'=>$request->price,
+                'category_id'=>$request->category,
+                ]);
+            }else{
+                $announcement=Announcement::create([
+                    'title'=>$request->title,
+                    'description'=>$request->description,
+                    'price'=>$request->price,
+                    'category_id'=>$request->category,
+                    ]);
+            }
 
         return redirect(route('announcement.index'))->with('message', 'Annuncio pubblicato con successo');
     }
