@@ -1,5 +1,10 @@
 <x-layout>
     <div class="container">
+        @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+        @endif
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3">
                 <h1>Annunci pubblicati</h1>

@@ -1,4 +1,13 @@
 <x-layout>
+  @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 
     <form method="POST" action="{{route('announcement.store')}}" class="col-12 col-md-6 offset-md-3" enctype="multipart/form-data">
         @csrf
@@ -11,16 +20,24 @@
           <label for="title" class="form-label">Titolo</label>
           <input type="text" name="title" class="form-control" id="title" >
         </div>
-        {{-- <div class="mb-3">
+        <div class="mb-3">
           <label for="exampleInputEmail2" class="form-label">Annuncio</label>
-          <select name="announcement">
-              @foreach ($announcements as $announcement)
-              <option value="{{$announcement->id}}">{{$announcement->title}}</option>
-
-              @endforeach
+          
 
           </select>
-        </div> --}}
+          <form action="{{route('announcement.store' )}}" method="post">
+            @csrf
+            <select name="category">
+              @foreach ($categories as $category)
+              <option value="{{$category->id}}">{{$category->name}}</option>
+
+              @endforeach
+              
+            </select>
+            <button class="btn btn-warning " type="submit">inserisci</button>
+          </form>
+          
+        </div>
 
           <label for="description">Descrizione</label>
           <textarea name="description" id="descr" cols="90" rows="5"></textarea>
