@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class AnnouncementController extends Controller
 {
@@ -12,6 +14,12 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        
+    }
+    
+
     public function index()
     {
         $announcements=Announcement::all();
@@ -26,9 +34,12 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Category $category)
     {
-        return view('announcement.create');
+        $category= Category::all();
+        return view('announcement.create',compact('category'));
+
+
     }
 
     /**
@@ -42,11 +53,13 @@ class AnnouncementController extends Controller
         $announcement=Announcement::create([
             'title'=>$request->title,
             'description'=>$request->description,
+            // 'description'=>$request->description,
             'img'=>$request->file('img')->store('public/img'),
             'price'=>$request->price,
+            'category_id'=>$request->category,
         ]);
 
-        return redirect(route('announcement.index'));
+        return redirect(route('announcement.index'))->with('message', 'Annuncio pubblicato con successo');
     }
 
     /**
