@@ -14,14 +14,14 @@
               <a class="nav-link" href="{{route('register')}}">Registrati</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('announcement.index')}}">Annunci</a>
+              <a class="nav-link" href="">Annunci</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('announcement.create')}}">Inserisci annuncio</a>
             </li>
             @else
             <li class="nav-item">
-              <a class="nav-link" href="#">I miei annunci</a>
+              <a class="nav-link" href="{{route('announcement.index')}}">I miei annunci</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Profilo</a>
