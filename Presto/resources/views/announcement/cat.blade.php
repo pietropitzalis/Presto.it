@@ -30,7 +30,8 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-                          <a href="#" class="btn btn-primary">Vai al dettaglio</a>
+                            <a href="{{ route('annunci.show', compact('announcement')) }}"
+                            class="btn btn-secondary mb-2 mt-2"> <b>Vai al dettaglio</b> </a>
                         </div>
                       </div>
                     @endforeach

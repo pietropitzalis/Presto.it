@@ -9,6 +9,7 @@
             <div class="col-12 col-md-6 offset-md-3">
                 <h1>Annunci pubblicati</h1>
             </div>
+            </div>
             <div class="row">
                 <div class="col-12 col-md-3">
                     @foreach ($announcements as $announcement)
@@ -30,7 +31,7 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-                          {{-- <a href="#" class="btn btn-primary">Vai al dettaglio</a> --}}
+                           
                         </div>
                       </div>
                     @endforeach

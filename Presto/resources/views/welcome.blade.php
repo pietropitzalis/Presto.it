@@ -1,16 +1,15 @@
 <x-layout>
     <h1>Benvenuto in Presto.it</h1>
 
-    {{-- <div class="row">
+      <div class="row">
         @foreach ($categories as $category)
             <div class="col-12 col-md-1 ms-auto my-5">
-                <form action="{{route('announcement.cat')}}" method="POST">
-                <input type="text" value="{{$category->id}}">{{$category->name}}</a>
-                </form>        
+               <p>{{$category->name}}</p>
+               <a href="{{route('announcement.index', ['cat'=>$category->id])}}" class="btn btn-primary">Esplora</a>      
             </div>
 
-                @endforeach --}}
-    </div>
+                @endforeach  
+    </div> 
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 mt-5 mb-5">
