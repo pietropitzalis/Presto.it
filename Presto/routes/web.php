@@ -20,4 +20,4 @@ Route::get('/',[AnnouncementController::class,'homepage'])->name('homepage');
  Route::get('/announcement/index',[AnnouncementController::class,'index'])->name('announcement.index');
  Route::get('/announcement/create',[AnnouncementController::class,'create'])->name('announcement.create')->middleware('auth');
  Route::post('/announcement/store',[AnnouncementController::class,'store'])->name('announcement.store')->middleware('auth');
- Route::get('/category/{name}/{id}/announcements',[AnnouncementController::class,'announcementsByCategory'])->name('announcement.cat');
+ Route::get('/category/{name}/{id}/announcements',[AnnouncementController::class,'announcementByCategory'])->name('announcement.cat');
