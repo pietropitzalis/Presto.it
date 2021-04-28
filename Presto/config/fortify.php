@@ -140,7 +140,7 @@ return [
         // Features::updatePasswords(),
         // Features::twoFactorAuthentication([
         //     'confirmPassword' => true,
-        // ]),
+    
     ],
 
 ];
