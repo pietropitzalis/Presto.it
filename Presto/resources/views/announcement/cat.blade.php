@@ -30,7 +30,7 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-                        <button class="btn btn-custom">  <a href="#" class="link-cat">Vai al dettaglio</a></button>
+                        <button class="btn btn-custom">  <a href="{{route('announcement.show',compact('announcement'))}}" class="link-cat">Vai al dettaglio</a></button>
                         </div>
                       </div>
                     @endforeach
