@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\AnnouncementController;
 
 /*
 |--------------------------------------------------------------------------

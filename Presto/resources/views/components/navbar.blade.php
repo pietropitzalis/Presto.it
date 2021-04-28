@@ -29,6 +29,11 @@
             <li class="nav-item ms-4">
               <a class="nav-link ins-ann text-danger fs-5" href="{{route('announcement.create')}}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci annuncio </a>
             </li>
+            @if (Auth::user()->is_revisor)
+            <li class="nav-item ms-4">
+              <a class="nav-link ins-ann text-danger fs-5" href="{{route('revisor.home')}}"><i class="fs-5 me-2 far fa-plus-square"></i> <span>{{\App\Models\Announcement::toBeRevisionedCount()}}</span> </a>
+            </li>
+            @endif
           <li class="nav-item ms-4 dropdown me-5">
             <a class="nav-link fs-5 dropdown-toggle me-5 registrati" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fas fs-5 me-2 fa-user-check"></i> Ciao,{{Auth::user()->name}} 

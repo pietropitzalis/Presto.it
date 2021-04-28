@@ -15,10 +15,9 @@
                         @endif
                         <p class="card-text">{{ $announcement->description }}</p>
                         <p class="card-text">{{ $announcement->price }}</p>
-                        <p>Creato il: {{$announcement->created_at->format('d-m-Y- H:i:s')}}</p>
                 <button class="btn btn-custom mb-2 mt-2">        <a href="{{ route('announcement.index', compact('announcement')) }}" class="link-cat">
                             <b>Torna agli annunci</b> </a></button>
-                        <div class="text-start mt-3">APRIL 16, 2021 21:30PM / <i class="text-foot-card">FACEBOOK</i> /
+                        <div class="text-start mt-3">{{$announcement->created_at->format('d-m-Y- H:i:s')}} / <i class="text-foot-card">FACEBOOK</i> /
                             <i class="text-foot-card">TWEET</i> / <i class="text-foot-card">EMAIL</i>
                         </div>
                         <hr class="text-danger">

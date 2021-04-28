@@ -25,7 +25,7 @@
                             <p>{{$announcement->price}}</p>
                             <p>Annuncio di: {{$announcement->user->name}}</p>
                             <p>Creato il: {{$announcement->created_at->format('d-m-Y- H:i:s')}}</p>
-                            <div> Categoria:<a href="{{route('announcement.cat', [
+                            <div> Categoria: <a href="{{route('announcement.cat', [
                                 $announcement->category->name,
                                 $announcement->category->id
                             ])}}"> 
