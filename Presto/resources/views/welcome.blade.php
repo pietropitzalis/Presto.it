@@ -1,4 +1,17 @@
 <x-layout>
+
+    @if (session('access.denied.revisor.only'))
+
+    <div class="alert alert-danger fs-1 text-center">
+        Accesso non consentito STRONZO - solo per revisori
+    </div>
+        
+    @endif
+    
+    
+    
+    
+    
     <h1 class="col-12 text-center my-5"> <b> Benvenuto in Presto.it </b> </h1>
 
     <div class="col-12 text-center my-5">

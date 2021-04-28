@@ -5,6 +5,7 @@
             {{ session('message') }}
         </div>
         @endif
+        
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3 my-5">
                 <h1>Annunci pubblicati</h1>
