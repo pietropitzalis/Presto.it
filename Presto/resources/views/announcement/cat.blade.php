@@ -30,12 +30,8 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-<<<<<<< HEAD
-                            <a href="{{ route('annunci.show', compact('announcement')) }}"
+                            <a href="{{ route('announcement.show', compact('announcement')) }}"
                             class="btn btn-secondary mb-2 mt-2"> <b>Vai al dettaglio</b> </a>
-=======
-                        <button class="btn btn-custom">  <a href="#" class="link-cat">Vai al dettaglio</a></button>
->>>>>>> bc70175a4d12b7e0642f3d50d390f6dab6334a60
                         </div>
                       </div>
                     @endforeach

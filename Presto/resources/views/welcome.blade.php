@@ -1,14 +1,5 @@
 <x-layout>
     <h1 class="col-12 text-center my-5"> <b> Benvenuto in Presto.it </b> </h1>
-
-      <div class="row">
-        @foreach ($categories as $category)
-            <div class="col-12 col-md-1 ms-auto my-5">
-               <p>{{$category->name}}</p>
-               <a href="{{route('announcement.index', ['cat'=>$category->id])}}" class="btn btn-primary">Esplora</a>      
-    <div class="col-12 text-center my-5">
-        <h2>Esplora le nostre categorie</h2>
-    </div>
     <div class="row justify-content-center">
         @foreach ($categories as $category)
             <div class="col-12 col-md-2 text-center ms-5">
@@ -23,8 +14,7 @@
                 </div>
             </div>
         @endforeach
-
-                @endforeach  
+ 
     </div> 
     <div class="container">
         <div class="row">

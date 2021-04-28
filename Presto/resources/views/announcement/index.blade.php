@@ -31,15 +31,6 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-                           
-                        <div class="card-title">
-                            <h3>{{ $announcement->title }}</h3>
-                        </div>
-                        <div class="card-description">
-                            <p>{{ $announcement->description }}</p>
-                        </div>
-                        <div class="card-price">
-                            <p>{{ $announcement->price }}</p>
                          <button class="btn btn-custom ">   <a href="{{ route('announcement.show', compact('announcement')) }}"
                             class="mb-2 mt-2 link-cat"> <b>Vai al dettaglio</b> </a></button>
                         </div>
