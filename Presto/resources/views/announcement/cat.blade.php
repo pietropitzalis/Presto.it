@@ -30,7 +30,7 @@
                                 $announcement->category->id
                             ])}}"> 
                             {{$announcement->category->name}}</a></div>
-                          <a href="#" class="btn btn-primary">Vai al dettaglio</a>
+                        <button class="btn btn-custom">  <a href="#" class="link-cat">Vai al dettaglio</a></button>
                         </div>
                       </div>
                     @endforeach

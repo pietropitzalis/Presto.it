@@ -14,10 +14,10 @@
               <p class="ms-5"><i class="fas fa-map-marker-alt me-2"></i> Viale Dei Pini , 53</p>
             </li>
             <li>
-              <p class="ms-5"><i class="far fa-envelope me-2"></i> info@subito.it</p>
+              <p class="ms-5"><i class="far fa-envelope me-2"></i> info@presto.it</p>
             </li>
             <li>
-              <p class="ms-5"><i class="fas fa-globe me-2"></i> Subito.it</p>
+              <p class="ms-5"><i class="fas fa-globe me-2"></i> Presto.it</p>
             </li>
             <li>
               <p class="ms-5"><i class="fas fa-mobile-alt me-2"></i> +39101010101</p>
@@ -60,5 +60,5 @@
     <!-- Footer -->
     <div class="text-center p-3 footer" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
-      <a class=" href="#">Presto.it</a>
+      <a class="" href="#">Presto.it</a>
     </div>

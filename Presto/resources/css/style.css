@@ -27,3 +27,17 @@
     background-color: rgba(70, 53, 53, 0.699);
     border-radius: 5px;
 }
+
+.link-cat{
+    color: white;
+    text-decoration: none;
+}
+
+.link-cat:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-custom{
+    background-color: rgba(235, 174, 44, 0.849);
+}
