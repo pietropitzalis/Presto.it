@@ -8,10 +8,6 @@
         
     @endif
     
-    
-    
-    
-    
     <h1 class="col-12 text-center my-5"> <b> Benvenuto in Presto.it </b> </h1>
 
     <div class="col-12 text-center my-5">
