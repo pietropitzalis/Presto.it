@@ -1,29 +1,29 @@
 <x-layout>
     <div class="container">
         @if (session('message'))
-            <div class="alert alert-success">
-                {{ session('message') }}
-            </div>
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
         @endif
         <div class="row">
-            <div class="col-12 col-md-6 offset-md-3">
+            <div class="col-12 col-md-6 offset-md-3 my-5">
                 <h1>Annunci pubblicati</h1>
             </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-3">
                     @foreach ($announcements as $announcement)
-                        <div class="card">
-                            <div class="row">
-                                <div class="card-img">
-                                    @if ($announcement->img)
-                                        <img src="{{ Storage::url($announcement->img) }}"
-                                            alt="{{ $announcement->title }}">
-                                    @else
-                                        <img src="https://via.placeholder.com/150" alt="{{ $announcement->title }}">
-                                </div>
+                    <div class="card">
+                    @if ($announcement->img)
+                        <img src="{{Storage::url($announcement->img)}}" alt="{{$announcement->title}}">
+                        @else
+                       <img src="https://via.placeholder.com/150" alt="{{$announcement->title}}"> 
                     @endif
-                    <div class="card-body">
+                        <div class="card-body">
+                            <h3>{{$announcement->title}}</h3>
+                            <p>{{$announcement->description}}</p>
+                            <p>{{$announcement->price}}</p>
+                            <p>Annuncio di: {{$announcement->user->name}}</p>
 
                             <p>Creato il: {{$announcement->created_at->format('d-m-Y- H:i:s')}}</p>
                             <div> Categoria:<a href="{{route('announcement.cat', [
@@ -40,22 +40,13 @@
                         </div>
                         <div class="card-price">
                             <p>{{ $announcement->price }}</p>
+                         <button class="btn btn-custom ">   <a href="{{ route('announcement.show', compact('announcement')) }}"
+                            class="mb-2 mt-2 link-cat"> <b>Vai al dettaglio</b> </a></button>
                         </div>
-                        <div class="card-auth">
-                            <p>Annuncio di: {{ $announcement->user->name }}</p>
-                        </div>
-
-                        <p>Creato il: {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>
-                        <div> Categoria: <a
-                                href="{{ route('announcement.cat', [$announcement->category->name, $announcement->category->id]) }}">
-                                {{ $announcement->category->name }}</a></div>
-                        {{-- <a href="#" class="btn btn-primary">Vai al dettaglio</a> --}}
-                    </div>
+                      </div>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
         </div>
-    </div>
-    </div>
     </div>
 </x-layout>

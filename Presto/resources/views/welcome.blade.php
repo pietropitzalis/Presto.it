@@ -15,7 +15,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <h5 class="card-title text-center my-4"><i class="fs-4 fas fa-store"></i> {{ $category->name }}</h5>
-                        <button class="btn btn-primary text-center"> <a href="{{route('announcement.cat',[
+                        <button class="btn btn-custom text-center"> <a class="link-cat" href="{{route('announcement.cat',[
                             $category->name,
                             $category->id
                           ]) }}">Cerca in {{ $category->name }}</a></button>
@@ -24,7 +24,6 @@
             </div>
         @endforeach
 
-<<<<<<< HEAD
                 @endforeach  
     </div> 
     <div class="container">
@@ -45,7 +44,6 @@
                             <div class="carousel-caption d-none d-md-block">
                                 
                             </div>
-=======
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 mt-5 mb-5">
@@ -57,7 +55,6 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
->>>>>>> 7fcb4d933746132a68e28d3a48cd9d7549561be1
                         </div>
                         <div class="carousel-inner text-center">
                             <div class="carousel-item active">
@@ -100,12 +97,12 @@
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button accordion" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button accordion fs-4" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion 3
+                                    Chi siamo
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="accordion-collapse collapse show fs-4" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the first item's accordion body.</strong> It is hidden by default,
@@ -119,13 +116,13 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button accordion collapsed" type="button"
+                                <button class="accordion-button accordion collapsed fs-4" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    Accordion 2
+                                    Cosa puoi fare su Presto.it
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="collapseTwo" class="accordion-collapse collapse fs-4" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the second item's accordion body.</strong> It is hidden by default,
@@ -139,10 +136,10 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button accordion collapsed" type="button"
+                                <button class="accordion-button accordion collapsed fs-4" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    Accordion 1
+                                    Compra e vendi in modo sicuro: le nostre policy
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"

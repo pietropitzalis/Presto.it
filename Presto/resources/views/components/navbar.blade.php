@@ -14,7 +14,7 @@
               <a class="nav-link fs-5 registrati" href="{{route('register')}}"><i class="fs-5 me-2 fas fa-clipboard-check"></i> Registrati </a>
             </li>
             <li class="nav-item ms-4">
-              <a class="nav-link fs-5 annunci" href=""><i class="fas fs-5 me-2 fa-pager"></i> Annunci </a>
+              <a class="nav-link fs-5 annunci" href="{{route('announcement.index')}}"><i class="fas fs-5 me-2 fa-pager"></i> Annunci </a>
             </li>
             <li class="nav-item ms-4">
               <a class="nav-link ins-ann text-danger fs-5" href="{{route('announcement.create')}}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci annuncio </a>
