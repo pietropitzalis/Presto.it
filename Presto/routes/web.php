@@ -16,6 +16,8 @@ use App\Http\Controllers\AnnouncementController;
 */
 
 Route::get('/',[AnnouncementController::class,'homepage'])->name('homepage');
+Route::get('/search',[AnnouncementController::class,'search'])->name('announcement.search');
+
 
 // Route::get('/category/{category}',[AnnouncementController::class,'category'])->name('announcement.cat');
 

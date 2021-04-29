@@ -29,6 +29,12 @@ class AnnouncementController extends Controller
         return view('announcement.index',compact('announcements'));
     }
 
+    public function search(Request $request){
+        $q=$request->input('q'); 
+        $categories=Category::search($q)->where('visible',true)->get();
+        return view('announcement.search',compact('q','announcements'));
+    }
+
     public function announcementByCategory($name , $category_id){
        $category = Category::find($category_id);
        $announcements = $category->announcement()
