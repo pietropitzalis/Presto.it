@@ -38,7 +38,7 @@
           </div>
   
             <label for="description">Descrizione</label>
-            <textarea name="description" id="descr" cols="90" rows="5" value="{{$announcement->description}}"></textarea>
+            <textarea name="description" id="descr" cols="90" rows="5">{{$announcement->description}}</textarea>
             <div class="mb-3">
               <label for="image" class="form-label">Immagine</label>
               <input type="file" name="img" class="form-control" id="image" >
