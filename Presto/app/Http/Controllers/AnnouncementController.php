@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 use App\Http\Requests\AnnouncementReq;
 
@@ -60,7 +61,7 @@ class AnnouncementController extends Controller
 
 
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -110,7 +111,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        return view('announcement.edit',compact('announcement'));
+        
     }
 
     /**
