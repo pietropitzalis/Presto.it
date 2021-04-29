@@ -10895,7 +10895,7 @@ h1,h2,h3,h4,h5,h6{
 .masthead {
     height: 80vh;
     min-height: 500px;
-    background-image:url(/img/sfondo.png);
+    background-image:url(/img/pianetino.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10914,6 +10914,11 @@ h1,h2,h3,h4,h5,h6{
 
 .fs-footer {
     font-size: 16px;
+}
+
+.subTitle {
+    color: var(--tre);
+    font-size: 40px;
 }
 
 

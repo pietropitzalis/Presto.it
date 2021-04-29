@@ -13,7 +13,7 @@
             <div class="row h-100 justify-content-center">
                 <div class="col-12 text-center">
                     <h1 class="title nav-link">Presto.it</h1>
-                    <p class="lead nav-link">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
+                    <h2 class="lead subTitle">Un mondo di offerte e spedizioni alla velocità della luce!</h2>
                     <button class="btn btn-custom"><a class="link-cat"
                             href="{{ route('announcement.create') }}">Inserisci annuncio</a></button>
                     <div class="container">
