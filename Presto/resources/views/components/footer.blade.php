@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<!-- Footer -->
+>>>>>>> a0c9132db63dc4025509f3dcd78402d3cf60069b
 <footer class="container-fluid footerback position-absolute">
   <div class="container my-5">
     <div class="row justify-content-between align-items-center text-center my-4">

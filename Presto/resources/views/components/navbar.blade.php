@@ -7,34 +7,34 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           @guest
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link fs-5 login" href="{{route('login')}}"><i class="fs-5 me-2 fas fa-sign-in-alt"></i> Login </a>
             </li>
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link fs-5 registrati" href="{{route('register')}}"><i class="fs-5 me-2 fas fa-clipboard-check"></i> Registrati </a>
             </li>
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link fs-5 annunci" href="{{route('announcement.index')}}"><i class="fas fs-5 me-2 fa-pager"></i> Annunci </a>
             </li>
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link ins-ann text-danger fs-5" href="{{route('announcement.create')}}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci annuncio </a>
             </li>
             @else
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link login fs-5" href="{{route('announcement.index')}}"><i class="fas me-2 fs-5 fa-archive"></i> I miei annunci </a>
             </li>
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link fs-5 annunci" href="#"><i class="fas me-2 fs-5 fa-user-cog"></i> Profilo </a>
             </li>
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link ins-ann text-danger fs-5" href="{{route('announcement.create')}}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci annuncio </a>
             </li>
             @if (Auth::user()->is_revisor)
-            <li class="nav-item ms-4">
+            <li class="nav-item ms-3">
               <a class="nav-link ins-ann text-danger fs-5" href="{{route('revisor.home')}}"><i class="fs-5 me-2 far fa-plus-square"></i> <span>{{\App\Models\Announcement::toBeRevisionedCount()}}</span> </a>
             </li>
             @endif
-          <li class="nav-item ms-4 dropdown me-5">
+          <li class="nav-item ms-3 dropdown me-5">
             <a class="nav-link fs-5 dropdown-toggle me-5 registrati" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fas fs-5 me-2 fa-user-check"></i> Ciao,{{Auth::user()->name}} 
             </a>
