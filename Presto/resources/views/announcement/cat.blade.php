@@ -43,13 +43,25 @@
 
                     @else
 
-                        <div class="col-12 text-center my-5 text-danger">
-                            <h1><b>Ops,non ci sono annunci qui!</b></h1>
-                            <button class="text-center my-5 btn btn-custom"> <a class="link-cat"
-                                    href="{{ route('announcement.index') }}">
-                                    <h1>Cerca altro nelle categorie</h1>
-                                </a></button>
+
+                            <div class="container text-center">
+                                    <div class="col-12">
+                                        <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <h1><b>Ops,non ci sono annunci qui!</b></h1>
+                                            <button class="text-center my-5 btn btn-custom"> 
+                                                <a class="link-cat"
+                                                    href="{{ route('announcement.index') }}">
+                                                    Cerca altro nelle categorie</a>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="/img/404.jpg" alt="">
+                                        </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
         @endif
 
         <div class="row justify-content-center mt-5">

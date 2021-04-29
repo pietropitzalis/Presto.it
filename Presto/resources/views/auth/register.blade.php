@@ -1,7 +1,7 @@
 <x-layout>
 
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-md-6 offset-md-3 mt-5">
                 <h3 class="mt-5">Registrati</h3>
 
@@ -27,7 +27,7 @@
                         <input type="password" name="password_confirmation" class="form-control"
                             id="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-5">Registrati</button>
+                    <button type="submit" class="btn btn-custom mb-5">Registrati</button>
                 </form>
             </div>
         </div>
