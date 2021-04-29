@@ -15,6 +15,10 @@
               <h1 class="">Presto.it</h1>
               <p class="lead ">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
               <button class="btn btn-custom"><a class="link-cat" href="{{route('announcement.create')}}">Inserisci annuncio</a></button>
+              <form action="{{route('announcement.search')}}" method="GET">
+                <input type="text" name="q" placeholder="Ricerca...">
+                <button type="submit">Cerca</button>
+              </form>
             </div>
           </div>
         </div>
