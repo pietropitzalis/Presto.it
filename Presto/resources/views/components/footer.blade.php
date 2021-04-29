@@ -1,64 +1,50 @@
-<!-- Footer -->
-<footer class="footer text-center text-lg-start">
-    <!-- Grid container -->
-    <div class="container">
-      <!--Grid row-->
-      <div class="row">
-        
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mt-5">
-          <h5 class="mb-4 ms-5">Aiuto e contatti</h5>
-  
-          <ul class="list-unstyled mb-0">
-            <li>
-              <p class="ms-5"><i class="fas fa-map-marker-alt me-2"></i> Viale Dei Pini , 53</p>
-            </li>
-            <li>
-              <p class="ms-5"><i class="far fa-envelope me-2"></i> info@presto.it</p>
-            </li>
-            <li>
-              <p class="ms-5"><i class="fas fa-globe me-2"></i> Presto.it</p>
-            </li>
-            <li>
-              <p class="ms-5"><i class="fas fa-mobile-alt me-2"></i> +39101010101</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-  
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 ms-5 mb-md-0 mt-5">
-          <ul class="list-unstyled mb-0">
-            <li>
-              <p class="">Instagram <i class="fab fa-instagram ms-3"></i> </p>
-            </li>
-            <li>
-              <p class="">Facebook <i class="fab fa-facebook-f ms-3"></i> </p>
-            </li>
-            <li>
-              <p class="">Twitter <i class="fab fa-twitter ms-3"></i> </p>
-            </li>
-            <li>
-              <p class="">Linkedin <i class="fab fa-linkedin-in ms-3"></i> </p>
-            </li>
-          </ul>
-        </div>
-        <!-- Section: Social media -->
-    
-        <!-- Section: Form -->
-        
-        <!-- Section: Form -->
-    
-        <!-- Section: Text -->
-    
-        <!-- Section: Links -->
-        
-      <!-- Copyright -->
-      
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <div class="text-center p-3 footer" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="" href="#">Presto.it</a>
+
+<footer class="container-fluid footerback position-absolute">
+  <div class="container my-5">
+    <div class="row justify-content-between align-items-center text-center my-4">
+      <div class="col-12 col-md-3">
+        <h2>Collekt</h2>
+        <p class="ft-colleck-col">Sologan Company</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2>Services</h2>
+        <p>Theme tweak</p>
+        <p>Pre sales faqs</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2>Showcase</h2>
+        <p>Support</p>
+        <p>Submit a ticket</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <h2>About us</h2>
+        <p>Contact us</p>
+        <p>Affiliates</p>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-12 border-footer"></div>
+    </div>
+    <div class="row fs-2 justify-content-center mx-auto text-center align-items-center my-4 container w-75">
+      <div class="col-3 col-md-3">
+        <i class="fab fa-facebook-square"></i>
+      </div>
+      <div class="col-3 col-md-3">
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="col-3 col-md-3">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="col-3 col-md-3">
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div class="row fs-2 justify-content-center text-center align-items-center">
+      <div class="col-12 mb-5">
+        <span class="fs-footer">Copyright. All rights reserved</span><span><i
+            class="far fa-copyright fs-footer"></i></span>
+      </div>
+    </div>
+  </div>
+</footer>
+

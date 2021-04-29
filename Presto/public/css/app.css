@@ -10871,3 +10871,25 @@ textarea.form-control-lg {
     background-color: rgba(235, 174, 44, 0.849);
 }
 
+/* footer */
+.border-footer {
+    border-bottom: 2px solid ;
+    border-bottom-color:  linear-gradient(90deg, rgba(255,255,255,0.7203256302521008) 0%, rgba(255,149,0,1) 50%, rgba(255,255,255,0.7455357142857143) 100%); 
+    
+}
+
+.border-footer {
+    border-bottom: 2px solid ;
+    border-bottom-color:  linear-gradient(90deg, rgba(255,255,255,0.7203256302521008) 0%, rgba(255,149,0,1) 50%, rgba(255,255,255,0.7455357142857143) 100%); 
+    
+}
+
+.ft-colleck-col {
+    color: white;
+}
+
+
+.fs-footer {
+    font-size: 16px;
+}
+

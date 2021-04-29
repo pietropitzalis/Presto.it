@@ -143,5 +143,6 @@
             </div>
         </div>
 
-        </header>
+    </header>
+    <x-footer/>
 </x-layout>
