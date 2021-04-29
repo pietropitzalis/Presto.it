@@ -10837,7 +10837,7 @@ textarea.form-control-lg {
 }
 
 .navbar{
-    background-color: whitesmoke !important;
+    background-color: transparent !important;
     position: fixed;
     z-index: 1000;
     width: 100vw;
