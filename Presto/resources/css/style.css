@@ -1,3 +1,8 @@
+:root{
+    --main: rgba(255, 0, 0, 0.199);
+    --sec: rgba(235, 174, 44, 0.849);
+}
+
 *{
     font-family: 'Asap Condensed', sans-serif;
 }
@@ -5,7 +10,6 @@
 .ins-ann{
     background-color: rgba(255, 0, 0, 0.199);
     border-radius: 5px;
-    margin-right: 300px !important;
 }
 
 .annunci{
@@ -41,3 +45,20 @@
 .btn-custom{
     background-color: rgba(235, 174, 44, 0.849);
 }
+
+.masthead {
+    height: 40vh;
+    min-height: 500px;
+    background-image:url(/img/mastheadjfif.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .image-h{
+      height: 600px;
+  }
+
+  .carousel-custom{
+      border:none !important;
+  }

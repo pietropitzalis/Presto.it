@@ -23,7 +23,15 @@ class DatabaseSeeder extends Seeder
         //         'created_at'=> Carbon::now(), 
         //         'updated_at'=> Carbon::now(), 
         //     ]);
+<<<<<<< HEAD
         // }
        // }
+=======
+<<<<<<< HEAD
+        // }
+=======
+        }
+>>>>>>> 5301472ae99edde112d9cd78806e20c149c41e78
+>>>>>>> a0c9132db63dc4025509f3dcd78402d3cf60069b
     }
 }

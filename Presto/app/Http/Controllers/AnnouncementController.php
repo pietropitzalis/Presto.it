@@ -15,28 +15,33 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        
+    public function homepage(Category $category){
+        $categories= Category::all();
+        return view('welcome',compact('categories'));
     }
-    
 
     public function index()
     {
-        $announcements=Announcement::orderBy('created_at', 'desc')->take(5)->get();
+        $announcements=Announcement::where('is_accepted',true)
+        ->orderBy('created_at', 'desc')
+        ->take(5)
+        ->get();
         return view('announcement.index',compact('announcements'));
     }
 
     public function announcementByCategory($name , $category_id){
        $category = Category::find($category_id);
-       $announcements = $category->announcement()->orderBy('created_at', 'desc')->paginate(5);
+       $announcements = $category->announcement()
+       ->where('is_accepted',true)
+       ->orderBy('created_at', 'desc')
+       ->paginate(5);
        return view('announcement.cat',compact('category', 'announcements'));
     }
 
-    public function homepage () {
-        $categories= Category::all();
-        return view('welcome',compact('categories'));
-    }
+    // public function category(Category $cat){
+    //     $announcements=Announcement::where('category_id',$cat)->get();
+    //     return view('category', compact('announcements'));
+    // }
     /**
      * Show the form for creating a new resource.
      *
@@ -87,6 +92,7 @@ class AnnouncementController extends Controller
      */
     public function show(Announcement $announcement)
     {
+       
         return view('announcement.show', compact('announcement'));
     }
 
