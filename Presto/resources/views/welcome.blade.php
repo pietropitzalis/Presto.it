@@ -12,9 +12,9 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-              <h1 class="font-weight-light">Presto.it</h1>
-              <p class="lead">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
-              <button class="btn btn-custom"><a href="{{route('announcement.create')}}">Inserisci annuncio</a></button>
+              <h1 class="">Presto.it</h1>
+              <p class="lead ">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
+              <button class="btn btn-custom"><a class="link-cat" href="{{route('announcement.create')}}">Inserisci annuncio</a></button>
             </div>
           </div>
         </div>

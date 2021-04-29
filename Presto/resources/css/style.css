@@ -7,23 +7,29 @@
     font-family: 'Asap Condensed', sans-serif;
 }
 
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+}
 .ins-ann{
-    background-color: rgba(255, 0, 0, 0.199);
+    background-color: rgba(255, 0, 0, 0.651);
     border-radius: 5px;
 }
 
 .annunci{
-    background-color: rgba(0, 109, 0, 0.199);
+    background-color: rgba(0, 109, 0, 0.658);
     border-radius: 5px;
 }
 
 .registrati{
-    background-color: rgba(255, 217, 0, 0.404);
+    background-color: rgba(255, 217, 0, 0.651);
     border-radius: 5px;
 }
 
 .login{
-    background-color: rgba(0, 102, 255, 0.199);
+    background-color: rgba(0, 102, 255, 0.651);
     border-radius: 5px;
 }
 
@@ -46,12 +52,14 @@
     background-color: rgba(235, 174, 44, 0.849);
 }
 
-/* footer */
-.border-footer {
-    border-bottom: 2px solid ;
-    border-bottom-color:  linear-gradient(90deg, rgba(255,255,255,0.7203256302521008) 0%, rgba(255,149,0,1) 50%, rgba(255,255,255,0.7455357142857143) 100%); 
-    
-}
+.masthead {
+    height: 80vh;
+    min-height: 500px;
+    background-image:url(/img/sell.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 .border-footer {
     border-bottom: 2px solid ;
