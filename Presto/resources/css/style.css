@@ -1,6 +1,9 @@
 :root{
-    --main: rgba(255, 0, 0, 0.199);
-    --sec: rgba(235, 174, 44, 0.849);
+    --main: #111D5E;
+    --sec: #C70039;
+    --tre: #F37121;
+    --qua:#C0E218;
+
 }
 
 *{
@@ -8,30 +11,17 @@
 }
 
 .navbar{
-    background-color: transparent !important;
-    position: fixed;
-    z-index: 1000;
-    width: 100vw;
+    background-color: var(--main) !important;
+    
+    
+    
 }
-.ins-ann{
-    background-color: rgba(255, 0, 0, 0.651);
-    border-radius: 5px;
-}
-
-.annunci{
-    background-color: rgba(0, 109, 0, 0.658);
-    border-radius: 5px;
+.nav-items{
+    color: var(--main)!important;
 }
 
-.registrati{
-    background-color: rgba(255, 217, 0, 0.651);
-    border-radius: 5px;
-}
 
-.login{
-    background-color: rgba(0, 102, 255, 0.651);
-    border-radius: 5px;
-}
+
 
 .text-img{
     background-color: rgba(70, 53, 53, 0.699);
@@ -39,17 +29,17 @@
 }
 
 .link-cat{
-    color: white;
+    color: var(--tre)!important;
     text-decoration: none;
 }
 
 .link-cat:hover{
-    color: white;
+   color: var(--sec)!important;
     text-decoration: none;
 }
 
 .btn-custom{
-    background-color: rgba(235, 174, 44, 0.849);
+    background-color: var(--main);
 }
 
 .masthead {
