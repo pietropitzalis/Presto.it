@@ -45,3 +45,20 @@
 .btn-custom{
     background-color: rgba(235, 174, 44, 0.849);
 }
+
+.masthead {
+    height: 40vh;
+    min-height: 500px;
+    background-image:url(/img/mastheadjfif.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .image-h{
+      height: 600px;
+  }
+
+  .carousel-custom{
+      border:none !important;
+  }

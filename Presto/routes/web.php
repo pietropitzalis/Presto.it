@@ -17,14 +17,17 @@ use App\Http\Controllers\AnnouncementController;
 
 Route::get('/',[AnnouncementController::class,'homepage'])->name('homepage');
 
+// Route::get('/category/{category}',[AnnouncementController::class,'category'])->name('announcement.cat');
+
+
 // ANNUNCI
  Route::get('/announcement/index',[AnnouncementController::class,'index'])->name('announcement.index');
  Route::get('/announcement/create',[AnnouncementController::class,'create'])->name('announcement.create')->middleware('auth');
- Route::post('/announcement/store',[AnnouncementController::class,'store'])->name('announcement.store')->middleware('auth');
+ Route::post('/announcement/store',[AnnouncementController::class,'store'])->name('announcement.store')->middleware('auth'); 
  Route::get('/category/{name}/{id}/announcements',[AnnouncementController::class,'announcementByCategory'])->name('announcement.cat');
  Route::get('/announcement/show/{announcement}',[AnnouncementController::class,'show'])->name('announcement.show');
 
-//  revisor
+ //  revisor
 Route::get('/revisor/home' , [RevisorController::class,'index'])->name('revisor.home');
 Route::post('/revisor/announcement/{id}/accept' , [RevisorController::class,'accept'])->name('revisor.accept');
 Route::post('/revisor/announcement/{id}/reject' , [RevisorController::class,'reject'])->name('revisor.reject');

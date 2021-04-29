@@ -15,16 +15,10 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        
+    public function homepage(Category $category){
+        $categories= Category::all();
+        return view('welcome',compact('categories'));
     }
-
-    // public function categoryImg($category_id){
-    //     $category = Category::find($category_id);
-    //     $category->img = $category->name('Auto')->file('img')->store('img/deal1.png');
-    //     $category->img = $category->name('Lavoro')->file('img')->store('img/deal1.png');
-    // }
 
     public function index()
     {
@@ -44,10 +38,10 @@ class AnnouncementController extends Controller
        return view('announcement.cat',compact('category', 'announcements'));
     }
 
-    public function homepage () {
-        $categories= Category::all();
-        return view('welcome',compact('categories'));
-    }
+    // public function category(Category $cat){
+    //     $announcements=Announcement::where('category_id',$cat)->get();
+    //     return view('category', compact('announcements'));
+    // }
     /**
      * Show the form for creating a new resource.
      *
@@ -98,6 +92,7 @@ class AnnouncementController extends Controller
      */
     public function show(Announcement $announcement)
     {
+       
         return view('announcement.show', compact('announcement'));
     }
 
