@@ -5,7 +5,7 @@
 
     <div class="container my-5">
         <div class="col-1 ms-5 mb-3">
-            <button class="btn btn-custom"><a class="link-cat" href="{{ route('announcement.index', compact('announcement')) }}"><i
+            <button class="btn btn-custom"><a class="link-cat" href="{{ URL::previous() }}"><i
                         class="fs-1 fas fa-arrow-circle-left"></a></i></button>
         </div>
         <div class="col-12 card">
