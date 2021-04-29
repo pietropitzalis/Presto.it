@@ -19,17 +19,28 @@ class AnnouncementController extends Controller
     {
         
     }
-    
+
+    // public function categoryImg($category_id){
+    //     $category = Category::find($category_id);
+    //     $category->img = $category->name('Auto')->file('img')->store('img/deal1.png');
+    //     $category->img = $category->name('Lavoro')->file('img')->store('img/deal1.png');
+    // }
 
     public function index()
     {
-        $announcements=Announcement::orderBy('created_at', 'desc')->take(5)->get();
+        $announcements=Announcement::where('is_accepted',true)
+        ->orderBy('created_at', 'desc')
+        ->take(5)
+        ->get();
         return view('announcement.index',compact('announcements'));
     }
 
     public function announcementByCategory($name , $category_id){
        $category = Category::find($category_id);
-       $announcements = $category->announcement()->orderBy('created_at', 'desc')->paginate(5);
+       $announcements = $category->announcement()
+       ->where('is_accepted',true)
+       ->orderBy('created_at', 'desc')
+       ->paginate(5);
        return view('announcement.cat',compact('category', 'announcements'));
     }
 
