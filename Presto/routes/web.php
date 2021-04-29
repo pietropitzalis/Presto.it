@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\AnnouncementController;
 
@@ -35,3 +36,5 @@ Route::get('/search',[AnnouncementController::class,'search'])->name('announceme
 Route::get('/revisor/home' , [RevisorController::class,'index'])->name('revisor.home');
 Route::post('/revisor/announcement/{id}/accept' , [RevisorController::class,'accept'])->name('revisor.accept');
 Route::post('/revisor/announcement/{id}/reject' , [RevisorController::class,'reject'])->name('revisor.reject');
+
+Route::get('/profile',[PublicController::class , 'profile'])->name('profile');
