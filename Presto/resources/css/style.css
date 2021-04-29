@@ -10,14 +10,16 @@
     font-family: 'Asap Condensed', sans-serif;
 }
 
+h1{
+    font-size: 80px;
+}
 .navbar{
     background-color: var(--main) !important;
     
-    
-    
 }
-.nav-items{
-    color: var(--main)!important;
+.nav-link{
+    color: var(--tre)!important;
+
 }
 
 
@@ -34,12 +36,18 @@
 }
 
 .link-cat:hover{
-   color: var(--sec)!important;
+   color: var(--tre)!important;
     text-decoration: none;
 }
 
 .btn-custom{
     background-color: var(--main);
+    color:var(--tre);
+}
+
+.btn-custom:hover{
+    background-color: var(--main);
+    color:var(--tre);
 }
 
 .masthead {

@@ -3,7 +3,7 @@
     @if (session('access.denied.revisor.only'))
 
     <div class="alert alert-danger fs-1 text-center">
-        Accesso non consentito STRONZO - solo per revisori
+        Accesso non consentito-solo per revisori
     </div>
         
     @endif
@@ -16,8 +16,8 @@
               <p class="lead ">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
               <button class="btn btn-custom"><a class="link-cat" href="{{route('announcement.create')}}">Inserisci annuncio</a></button>
               <form action="{{route('announcement.search')}}" method="GET">
-                <input type="text" name="q" placeholder="Ricerca...">
-                <button type="submit">Cerca</button>
+                <input type="text" name="q" placeholder="Ricerca..." class="mt-3 me-2">
+                <button type="submit" class="btn btn-custom">Cerca</button>
               </form>
             </div>
           </div>
@@ -48,7 +48,7 @@
             <div class="card mb-3">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
-                    <img src="{{Storage::url('img/giphy.gif')}}" alt="..." class="img-fluid">
+                    <img src="/img/giphy.gif" alt="..." class="img-fluid">
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="card-body">
@@ -64,7 +64,7 @@
             <div class="card mb-3">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
-                    <img src="{{Storage::url('img/tenor.gif')}}" alt="..." class="img-fluid">
+                    <img src="img/tenor.gif" alt="..." class="img-fluid">
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="card-body">
@@ -80,7 +80,7 @@
             <div class="card mb-3">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6">
-                    <img src="{{Storage::url('img/giphy.gif')}}" alt="..." class="img-fluid">
+                    <img src="/img/giphy.gif" alt="..." class="img-fluid">
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="card-body">
