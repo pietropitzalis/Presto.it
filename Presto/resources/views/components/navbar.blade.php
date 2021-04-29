@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid ms-5">
-      <a class="navbar-brand text-danger ms-5 fs-1" href="{{route('homepage')}}"> <hr> <i class="text-danger fs-1 ms-5 fas fa-bullhorn"></i> <b> Presto.it </b> <hr> </a>
+      <a class="navbar-brand text-danger ms-5 fs-1" href="{{route('homepage')}}"><i class="text-danger fs-3 ms-5 fas fa-bullhorn"></i> <b> Presto.it </b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

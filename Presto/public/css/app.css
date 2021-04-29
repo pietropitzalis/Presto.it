@@ -10836,23 +10836,29 @@ textarea.form-control-lg {
     font-family: 'Asap Condensed', sans-serif;
 }
 
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+}
 .ins-ann{
-    background-color: rgba(255, 0, 0, 0.199);
+    background-color: rgba(255, 0, 0, 0.651);
     border-radius: 5px;
 }
 
 .annunci{
-    background-color: rgba(0, 109, 0, 0.199);
+    background-color: rgba(0, 109, 0, 0.658);
     border-radius: 5px;
 }
 
 .registrati{
-    background-color: rgba(255, 217, 0, 0.404);
+    background-color: rgba(255, 217, 0, 0.651);
     border-radius: 5px;
 }
 
 .login{
-    background-color: rgba(0, 102, 255, 0.199);
+    background-color: rgba(0, 102, 255, 0.651);
     border-radius: 5px;
 }
 
@@ -10876,9 +10882,9 @@ textarea.form-control-lg {
 }
 
 .masthead {
-    height: 40vh;
+    height: 80vh;
     min-height: 500px;
-    background-image:url(/img/mastheadjfif.png);
+    background-image:url(/img/sell.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

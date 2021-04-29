@@ -50,7 +50,7 @@ class AnnouncementController extends Controller
     public function create()
     {
         $categories= Category::all();
-        return view('announcement.create',compact('categories'));
+        return view('announcement.create');
 
 
     }
@@ -81,7 +81,7 @@ class AnnouncementController extends Controller
                     ]);
             }
 
-        return redirect(route('announcement.index'))->with('message', 'Annuncio pubblicato con successo');
+        return redirect(route('announcement.index'))->with('message', "Annuncio inserito con successo,al momento e' in attesa di revisione,verrà pubblicato appena possibile");
     }
 
     /**
