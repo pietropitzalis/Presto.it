@@ -8,7 +8,7 @@
           </ul>
       </div>
   @endif
-  
+   
       <form method="POST" action="{{route('announcement.update',compact('announcement'))}}" class="col-12 col-md-6 offset-md-3" enctype="multipart/form-data">
           @csrf
           <div class="row px-2">
@@ -38,7 +38,7 @@
           </div>
   
             <label for="description">Descrizione</label>
-            <textarea name="description" id="descr" cols="90" rows="5" value="{{$announcement->description}}"></textarea>
+            <textarea name="description" id="descr" cols="90" rows="5">{{$announcement->description}}</textarea>
             <div class="mb-3">
               <label for="image" class="form-label">Immagine</label>
               <input type="file" name="img" class="form-control" id="image" >
