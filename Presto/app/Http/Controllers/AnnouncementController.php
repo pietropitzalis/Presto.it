@@ -110,7 +110,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        //
+        return view('announcement.edit',compact('announcement'));
     }
 
     /**
@@ -122,7 +122,15 @@ class AnnouncementController extends Controller
      */
     public function update(Request $request, Announcement $announcement)
     {
-        //
+        if($request->img){
+            $announcement->image=$request->file('img')->store('public/img');
+        }
+        $announcement->title=$request->title;
+        $announcement->description=$request->description;
+        $announcement->price=$request->price;
+        $announcement->save();
+
+        return redirect(route('announcement.index'));
     }
 
     /**
