@@ -10837,7 +10837,7 @@ textarea.form-control-lg {
 }
 
 .navbar{
-    background-color: transparent !important;
+    background-color: whitesmoke !important;
     position: fixed;
     z-index: 1000;
     width: 100vw;
@@ -10884,7 +10884,7 @@ textarea.form-control-lg {
 .masthead {
     height: 80vh;
     min-height: 500px;
-    background-image:url(/img/sell.jpg);
+    background-image:url(/img/sell.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
