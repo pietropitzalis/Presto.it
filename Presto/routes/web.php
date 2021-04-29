@@ -28,6 +28,8 @@ Route::get('/search',[AnnouncementController::class,'search'])->name('announceme
  Route::post('/announcement/store',[AnnouncementController::class,'store'])->name('announcement.store')->middleware('auth'); 
  Route::get('/category/{name}/{id}/announcements',[AnnouncementController::class,'announcementByCategory'])->name('announcement.cat');
  Route::get('/announcement/show/{announcement}',[AnnouncementController::class,'show'])->name('announcement.show');
+ Route::get('announcement/edit/{announcement}',[AnnouncementController::class , 'edit'])->name('announcement.edit');
+ Route::post('announcement/update',[AnnouncementController::class , 'update'])->name('announcement.update');
 
  //  revisor
 Route::get('/revisor/home' , [RevisorController::class,'index'])->name('revisor.home');

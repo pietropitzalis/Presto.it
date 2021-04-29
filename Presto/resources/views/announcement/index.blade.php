@@ -33,6 +33,9 @@
                     <button class="btn btn-custom my-3"> <a
                             href="{{ route('announcement.show', compact('announcement')) }}"
                             class="link-cat"> <b>Vai al dettaglio</b> </a></button>
+                            <button class="btn btn-custom my-3"> <a
+                                href="{{ route('announcement.edit', compact('announcement')) }}"
+                                class="link-cat"> <b>Modifca</b> </a></button>
                 </div>
             </div>
         </div>
