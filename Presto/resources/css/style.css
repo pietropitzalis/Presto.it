@@ -10,18 +10,33 @@
     font-family: 'Asap Condensed', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+    color:var(--main)
+}
+
+.title{
+    font-size: 80px;
+    color: var(--tre) !important;
+}
+
+
 .navbar{
     background-color: var(--main) !important;
-    
-    
-    
 }
-.nav-items{
-    color: var(--main)!important;
+    .nav-link{
+        color: var(--tre)!important;
+        transition: all 0.4s;
+    
+    }
+    .nav-link:hover{
+        color: var(--tre)!important;
+        transform: scale(1.1);
+    }
+
+.card-custom{
+    border-radius: 20px;
+    border:var(--tre) solid 0.5px;
 }
-
-
-
 
 .text-img{
     background-color: rgba(70, 53, 53, 0.699);
@@ -34,18 +49,24 @@
 }
 
 .link-cat:hover{
-   color: var(--sec)!important;
+   color: var(--tre)!important;
     text-decoration: none;
 }
 
 .btn-custom{
     background-color: var(--main);
+    color:var(--tre);
+}
+
+.btn-custom:hover{
+    background-color: var(--main);
+    color:var(--tre);
 }
 
 .masthead {
     height: 80vh;
     min-height: 500px;
-    background-image:url(/img/sell.png);
+    background-image:url(/img/sfondo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
