@@ -32,8 +32,8 @@
                         <p>Creato il: {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>
                         <h4 class="text-truncate">{{ $announcement->description }}</h4>
                         <h5>{{ $announcement->price }} $</h5>
-                        <p>Annuncio di: {{ $announcement->user->name }}</p>
-                        <div> Categoria:<a
+                        <h6>Annuncio di: {{ $announcement->user->name }}</h6>
+                        <div> Categoria:<a class="link-cat"
                                 href="{{ route('announcement.cat', [$announcement->category->name, $announcement->category->id]) }}">
                                 {{ $announcement->category->name }}</a></div>
                         <button class="btn btn-custom my-3"> <a

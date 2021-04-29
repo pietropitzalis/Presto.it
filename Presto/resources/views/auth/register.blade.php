@@ -1,8 +1,8 @@
 <x-layout>
 
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6 offset-md-3 mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
                 <h3 class="mt-5">Registrati</h3>
 
                 <form method="POST" action="{{ route('register') }}">

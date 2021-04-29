@@ -14,32 +14,31 @@
                 <div class="col-12 text-center">
                     <h1 class="title nav-link">Presto.it</h1>
                     <h2 class="lead subTitle">Un mondo di offerte e spedizioni alla velocità della luce!</h2>
-                    <button class="btn btn-custom"><a class="link-cat"
-                            href="{{ route('announcement.create') }}">Inserisci annuncio</a></button>
                     <div class="container">
-                        <div class="row height d-flex justify-content-center mt-5">
-                          
-                            <div class="col-md-3">
-                                <form action="{{ route('announcement.search') }}" method="GET">
-                                    <input type="text" name="q" placeholder="Ricerca..." id="form1"
-                                        class="form-control" />
-                                    <label class="form-label" for="form1"></label>
-                                    
-                                </form>
-                                
+                        <div class="col-12">
+                        <div class="row justify-content-center">
+                                    <div class="col-4 cat">
+                                        <form action="{{ route('announcement.search') }}" method="GET">
+                                            <input type="text" name="q" placeholder="Ricerca..." id="form1"
+                                                class="form-control" />
+                                            <label class="form-label" for="form1"></label>
+                                            <button type="submit" class="btn btn-custom">
+                                                <i class="fas fa-search me-3"></i>Cerca nelle categorie
+                                            </button>
+                                        </form>            
+                                    </div>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-custom col-md-1">
-                              <i class="fas fa-search me-3"></i>Cerca
-                          </button>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
     </header>
-
+    <h6 class="subsubTitle mt-5 text-center"> Vuoi vendere in fretta e senza sforzi?   <button class="ms-4 btn btn-custom"><a class="link-cat fs-4"
+        href="{{ route('announcement.create') }}">Inserisci un annuncio!</a></button></h6>
     {{-- SEZIONE CATEGORIE --}}
     <div class="row justify-content-center">
         <h2 class="text-center mt-5">Le nostre categorie:</h2>

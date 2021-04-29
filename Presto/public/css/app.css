@@ -10835,6 +10835,14 @@ textarea.form-control-lg {
 
 }
 
+.main{
+    background-color: var(--main);
+}
+
+.tre{
+    color:var(--tre);
+}
+
 *{
     font-family: 'Asap Condensed', sans-serif;
 }
@@ -10921,6 +10929,20 @@ h1,h2,h3,h4,h5,h6{
     font-size: 40px;
 }
 
+.subsubTitle {
+    color: var(--main);
+    font-size: 40px;
+}
+
+.subTitle:hover {
+    color: var(--tre);
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.cat{
+    margin-top:300px !important;
+}
 
 
 

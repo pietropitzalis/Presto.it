@@ -1,9 +1,9 @@
 <x-layout>
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6 offset-md-3 mt-5">
-                <h2 class="mt-5">Accedi</h2>
+    <div class="container my-5">
+        <div class="row my-5">
+            <div class="col-md-6 offset-md-3 my-5">
+                <h2 class="my-5">Accedi</h2>
 
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
