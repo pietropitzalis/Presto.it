@@ -38,11 +38,7 @@
           </div>
   
             <label for="description">Descrizione</label>
-<<<<<<< HEAD
             <textarea name="description" id="descr" cols="90" rows="5">{{$announcement->description}}</textarea>
-=======
-            <textarea name="description" id="descr" cols="90" rows="5" >{{$announcement->description}}</textarea>
->>>>>>> f4d67dad5246a29c8f1141fc429caa659e06f84b
             <div class="mb-3">
               <label for="image" class="form-label">Immagine</label>
               <input type="file" name="img" class="form-control" id="image" >
