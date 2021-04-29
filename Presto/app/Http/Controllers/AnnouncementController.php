@@ -31,7 +31,7 @@ class AnnouncementController extends Controller
 
     public function search(Request $request){
         $q=$request->input('q'); 
-        $categories=Category::search($q)->where('visible',true)->get();
+        $announcements=Announcement::search($q)->where('is_accepted',true)->get();
         return view('announcement.search',compact('q','announcements'));
     }
 

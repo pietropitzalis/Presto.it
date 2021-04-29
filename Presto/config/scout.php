@@ -140,11 +140,11 @@ return [
         'fuzzy' => [
             'prefix_length' => 3,
             'max_expansions' => 50,
-            'distance' => 3
+            'distance' => 4
         ],
-        'asYouType' => false,
+        'asYouType' => true,
         'searchBoolean' => true,
-        'maxDocs' => env('TNTSEARCH_MAX_DOCS', 500),
+        
     ],
 
 ];
