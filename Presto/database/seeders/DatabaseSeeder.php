@@ -23,8 +23,9 @@ class DatabaseSeeder extends Seeder
         //         'created_at'=> Carbon::now(), 
         //         'updated_at'=> Carbon::now(), 
         //     ]);
-<<<<<<< HEAD
         // }
+<<<<<<< HEAD
+=======
        // }
 =======
 <<<<<<< HEAD
@@ -33,5 +34,6 @@ class DatabaseSeeder extends Seeder
         }
 >>>>>>> 5301472ae99edde112d9cd78806e20c149c41e78
 >>>>>>> a0c9132db63dc4025509f3dcd78402d3cf60069b
+>>>>>>> e127daea57730c635219a643312fbe1b303bb66d
     }
 }

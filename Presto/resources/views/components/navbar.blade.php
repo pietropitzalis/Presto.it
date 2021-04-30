@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid ms-5">
       <a class="navbar-brand nav-link ms-5 fs-1" href="{{route('homepage')}}"><i class="fs-3 ms-5 fas fa-bullhorn"></i> <b> Presto.it </b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

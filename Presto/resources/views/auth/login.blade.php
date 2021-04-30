@@ -1,9 +1,9 @@
 <x-layout>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3 mt-5">
-                <h3 class="mt-5">Accedi</h3>
+    <div class="container my-5">
+        <div class="row my-5">
+            <div class="col-md-6 offset-md-3 my-5">
+                <h2 class="my-5">Accedi</h2>
 
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -16,7 +16,7 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-5">Accedi</button>
+                    <button type="submit" class="btn btn-custom mb-5">Accedi</button>
                 </form>
             </div>
         </div>

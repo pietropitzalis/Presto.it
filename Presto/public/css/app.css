@@ -10835,17 +10835,32 @@ textarea.form-control-lg {
 
 }
 
+.main{
+    background-color: var(--main);
+}
+
+.tre{
+    color:var(--tre);
+}
+
 *{
     font-family: 'Asap Condensed', sans-serif;
 }
 
-h1{
-    font-size: 80px;
+h1,h2,h3,h4,h5,h6{
+    color:var(--main)
 }
+
+.title{
+    font-size: 80px;
+    color: var(--tre) !important;
+}
+
+
 .navbar{
     background-color: var(--main) !important;
-    
 }
+<<<<<<< HEAD
 .nav-link{
     color: var(--tre)!important;
     transition: all 0.4s;
@@ -10855,11 +10870,22 @@ h1{
     color: var(--tre)!important;
     
     transform: scale(1.1);
+=======
+    .nav-link{
+        color: var(--tre)!important;
+        transition: all 0.4s;
+    
+    }
+    .nav-link:hover{
+        color: var(--tre)!important;
+        transform: scale(1.1);
+    }
+>>>>>>> 43ce8cfb5326293f8d9c05a65ada2054d57bd2fc
 
+.card-custom{
+    border-radius: 20px;
+    border:var(--tre) solid 0.5px;
 }
-
-
-
 
 .text-img{
     background-color: rgba(70, 53, 53, 0.699);
@@ -10892,18 +10918,46 @@ h1{
 .masthead {
     height: 80vh;
     min-height: 500px;
-    background-image:url(/img/sell.png);
+    background-image:url(/img/pianetino.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .image-h{
-      height: 600px;
-  }
+.border-footer {
+    border-bottom: 2px solid ;
+    border-bottom-color:  linear-gradient(90deg, rgba(255,255,255,0.7203256302521008) 0%, rgba(255,149,0,1) 50%, rgba(255,255,255,0.7455357142857143) 100%); 
+    
+}
 
-  .carousel-custom{
-      border:none !important;
-  }
+.ft-colleck-col {
+    color: white;
+}
+
+
+.fs-footer {
+    font-size: 16px;
+}
+
+.subTitle {
+    color: var(--tre);
+    font-size: 40px;
+}
+
+.subsubTitle {
+    color: var(--main);
+    font-size: 40px;
+}
+
+.subTitle:hover {
+    color: var(--tre);
+    font-size: 40px;
+    transition: all 0.4s;
+}
+
+.cat{
+    margin-top:300px !important;
+}
+
 
 
