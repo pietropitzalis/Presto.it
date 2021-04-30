@@ -65,7 +65,7 @@
                                 </button>
                             </div>
                             <div class="col-md-6">
-                                <img src="/img/404.jpg" alt="">
+                                <img src="/img/404.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>

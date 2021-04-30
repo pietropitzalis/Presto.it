@@ -15,22 +15,25 @@
         </div>
     </div>
 
-    @foreach ($announcements as $announcement)
-        <div class="container my-5">
-            <div class="col-6 offset-md-3 card card-custom shadow">
-                <div class="row my-3 mx-auto">
-                    <div class="col-6 ">
+    <div class="container">
+        <div class="row justify-space-between">
+            @foreach ($announcements as $announcement)
+            
+        <div class="col-12 my-5 col-md-4 card card-custom shadow">
+            
+               <div class="row">
+                    <div class="col-6">
                         @if ($announcement->img)
                             <img src="{{ Storage::url($announcement->img) }}" class="img-fluid"
                                 alt="{{ $announcement->title }}">
                         @else
-                            <img src="https://via.placeholder.com/300" class="img-fluid" alt="{{ $announcement->title }}">
+                            <img src="https://via.placeholder.com/300" class="img-fluid"
+                                alt="{{ $announcement->title }}">
                         @endif
                     </div>
                     <div class="col-6">
                         <h2><b>{{ $announcement->title }}</b></h2>
                         <p>Creato il: {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>
-                        <h4 class="text-truncate">{{ $announcement->description }}</h4>
                         <h5>{{ $announcement->price }} $</h5>
                         <h6>Annuncio di: {{ $announcement->user->name }}</h6>
                         <div> Categoria:<a class="link-cat"
@@ -39,11 +42,11 @@
                         <button class="btn btn-custom my-3"> <a
                                 href="{{ route('announcement.show', compact('announcement')) }}" class="link-cat">
                                 <b>Vai al dettaglio</b> </a></button>
-
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
-    @endforeach
+    </div>
 
 </x-layout>
