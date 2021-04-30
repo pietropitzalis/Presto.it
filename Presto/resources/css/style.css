@@ -31,17 +31,6 @@ h1,h2,h3,h4,h5,h6{
 .navbar{
     background-color: var(--main) !important;
 }
-<<<<<<< HEAD
-.nav-link{
-    color: var(--tre)!important;
-    transition: all 0.4s;
-
-}
-.nav-link:hover{
-    color: var(--tre)!important;
-    
-    transform: scale(1.1);
-=======
     .nav-link{
         color: var(--tre)!important;
         transition: all 0.4s;
@@ -51,7 +40,6 @@ h1,h2,h3,h4,h5,h6{
         color: var(--tre)!important;
         transform: scale(1.1);
     }
->>>>>>> 43ce8cfb5326293f8d9c05a65ada2054d57bd2fc
 
 .card-custom{
     border-radius: 20px;

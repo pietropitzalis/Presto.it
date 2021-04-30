@@ -14,7 +14,7 @@
             <div class="col-md-6 offset-md-3 mt-5">
                 <h1 class="my-5 text-center">Inserisci annuncio</h1>
 
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('announcement.store') }}">
                     @csrf
                     <div class="mb-4">
                         <label for="title" class="form-label">Titolo</label>
