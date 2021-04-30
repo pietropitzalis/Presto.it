@@ -17,10 +17,10 @@
                     <div class="container">
                         <div class="col-12">
                         <div class="row justify-content-center">
-                                    <div class="col-4 cat">
+                                    <div class="col-6 cat">
                                         <form action="{{ route('announcement.search') }}" method="GET">
                                             <input type="text" name="q" placeholder="Ricerca..." id="form1"
-                                                class="form-control" />
+                                                class="form-control"/>
                                             <label class="form-label" for="form1"></label>
                                             <button type="submit" class="btn btn-custom">
                                                 <i class="fas fa-search me-3"></i>Cerca nelle categorie
@@ -38,19 +38,18 @@
 
     </header>
     <h6 class="subsubTitle mt-5 text-center"> Vuoi vendere in fretta e senza sforzi?   <button class="ms-4 btn btn-custom"><a class="link-cat fs-4"
-        href="{{ route('announcement.create') }}">Inserisci un annuncio!</a></button></h6>
+        href="{{ route('announcement.create') }}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci un annuncio!</a></button></h6>
     {{-- SEZIONE CATEGORIE --}}
     <div class="row justify-content-center">
-        <h2 class="text-center mt-5">Le nostre categorie:</h2>
+        <h2 class="text-center mt-5">Esplora le categorie:</h2>
         @foreach ($categories as $category)
-            <div class="col-12 col-md-2 text-center ms-5">
+            <div class="col-12 col-md-3 text-center ms-5">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h5 class="card-title mt-5 text-center my-4"><i class="fs-4 fas fa-store"></i>
                             {{ $category->name }}</h5>
                         <button class="btn btn-custom text-center"> <a class="link-cat"
-                                href="{{ route('announcement.cat', [$category->name, $category->id]) }}">Cerca
-                                in {{ $category->name }}</a></button>
+                                href="{{ route('announcement.cat', [$category->name, $category->id]) }}">Esplora</a></button>
                     </div>
                 </div>
             </div>

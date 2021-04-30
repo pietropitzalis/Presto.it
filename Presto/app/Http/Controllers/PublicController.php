@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class PublicController extends Controller
 {
     public function profile() {
-        $announcements=Auth::user()->announcement()->get();
+        // $announcements=Auth::user()->announcement()->get();
         
 
         return view('profile', compact ('announcements'));
