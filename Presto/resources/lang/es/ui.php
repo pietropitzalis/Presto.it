@@ -27,7 +27,36 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'hello'=>'Hola',
 'profile'=>'Perfil',
 
+
+//login
+'login' => 'Iniciar Sesion',
+'email' => 'Correo electrónico',
+'password' => 'Contraseña',
+'login' => 'Iniciar Sesion',
+
+//register
+'register' => 'Registrado',
+'user_name' => 'Nombre de usuario',
+'insert_email' => 'insertar correo',
+'password' => 'Contraseña',
+'confirm_password' => 'Confirmar la contraseña',
+'register' => 'Registrarse',
+
+//create
+'insert_announcement' => 'Insert announcement',
+'title' => 'Título',
+'select_category' => 'Seleccionar la categoría',
+'image' => 'Imagen',
+'price' => 'Precio',
+'description' => 'Descripción',
+'insert' => 'Insertar',
+
+
+
+
+
 ];
+
 
 
 
