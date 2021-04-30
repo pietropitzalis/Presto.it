@@ -25,8 +25,8 @@ class AnnouncementReq extends FormRequest
     {
         return [
             'title'=>'required|min:5|max:30',
-            // 'img'=>'image',
-            'description'=> 'required|min:5|max:30',
+            'img'=>'required|image',
+            'description'=> 'required|min:5|max:500',
             'price'=> 'required|numeric',
             
         ];
