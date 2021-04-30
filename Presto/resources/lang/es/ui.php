@@ -4,7 +4,7 @@ return[
 'welcome'=>'Un mundo de ofertas y envíos a la velocidad de la luz',
 'search'=>'Buscar en categorías',
 'slogan'=>'¿Quiere vender de forma rápida y sin esfuerzo?',
-'announcement'=>'Publica un anuncio',
+'insert_announcement'=>'Publica un anuncio',
 'explore_category'=>'Explorar las categorías',
 'explore'=>'Explorar',
 'carousel1'=>'Compre en cualquier momento y en cualquier lugar',
@@ -23,9 +23,22 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'login'=>'Iniciar Sesión',
 'register'=>'Registrarse',
 'announcements'=>'Anuncios',
+'announcement'=>'Anuncio',
 'insert_ad'=>'Publicar anuncio',
 'hello'=>'Hola',
 'profile'=>'Perfil',
+
+//INDEX
+'announcement'=>'Anuncio',
+'created_on'=>'Creado en:',
+'created_by'=>'Creado por:',
+'category'=>'Categoría:',
+'price'=>'Precio:',
+'go_detail'=>'Ir al detalle',
+'detail'=>'DETALLE DEL ARTÌCULO',
+'no_announcements'=>'¡Vaya, no hay anuncios aquí!',
+'search_other'=>'Buscar más en las categorías',
+
 
 ];
 

@@ -4,7 +4,7 @@ return[
 'welcome'=>'Un mondo di offerte e spedizioni alla velocità della luce',
 'search'=>'Ricerca nelle categorie',
 'slogan'=>'Vuoi vendere in fretta e senza sforzi?',
-'announcement'=>'Inserisci un annuncio',
+'insert_announcement'=>'Inserisci un annuncio',
 'explore_category'=>'Esplora le categorie',
 'explore'=>'Esplora',
 'carousel1'=>'Acquista in ogni momento,in qualunque posto',
@@ -19,10 +19,27 @@ Nessuna commisione e affidabilità al 100%',
 // NAVBAR
 'login'=>'Accedi',
 'register'=>'Registrati',
-'announcements'=>'Inserisci Annuncio',
 'insert_ad'=>'Inserisci Annuncio',
 'hello'=>'Ciao,',
 'profile'=>'Profilo',
+
+//INDEX
+'announcement'=>'Annuncio',
+'announcements'=>'Annunci',
+'created_on'=>'Creato il:',
+'created_by'=>'Creato da:',
+'category'=>'Categoria:',
+'price'=>'Prezzo:',
+'go_detail'=>'Vai al dettaglio',
+'detail'=>'DETTAGLIO ARTICOLO',
+'no_announcements'=>'Ops,non ci sono annunci qui!',
+'search_other'=>'Cerca altro nelle categorie',
+
+
+
+
+
+
 ];
 
 

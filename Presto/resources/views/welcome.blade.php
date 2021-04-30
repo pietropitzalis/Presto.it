@@ -38,6 +38,8 @@
 
 
     </header>
+
+    <div class="container">
     <h6 class="subsubTitle mt-5 text-center">{{__('ui.slogan')}}<button class="ms-4 btn btn-custom"><a class="link-cat fs-4"
         href="{{ route('announcement.create') }}"><i class="fs-5 me-2 far fa-plus-square"></i>{{__('ui.announcement')}}</a></button></h6>
     {{-- SEZIONE CATEGORIE --}}
@@ -116,5 +118,5 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+</div>
 </x-layout>

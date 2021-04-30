@@ -5,7 +5,7 @@ return[
 'welcome'=>'A world of offers and shipments at the speed of light',
 'search'=>'Search in categories',
 'slogan'=>'Do you want to sell quickly and effortlessly?',
-'announcement'=>'Place an ad',
+'insert_announcement'=>'Place an ad',
 'explore_category'=>'Explore the categories',
 'explore'=>'Explore',
 'carousel1'=>'Buy anytime, anywhere',
@@ -27,8 +27,16 @@ No commission and 100% reliability',
 'hello'=>'Hello,',
 'profile'=>'Profile',
 
-
-
+//INDEX
+'announcement'=>'Announcements',
+'created_on'=>'Created on:',
+'created_by'=>'Created by:',
+'category'=>'Category:',
+'price'=>'Price:',
+'go_detail'=>'Go to detail',
+'detail'=>'ANNOUNCEMENT DETAIL',
+'no_announcements'=>'Oops, there are no ads here!',
+'search_other'=>'Search more in the categories',
 ];
 
 

@@ -6,15 +6,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      
+        <li class="nav-item flag-icon-it mx-2 mt-4">@include('components._locale',['lang'=>'it','nation'=>'it'])AAA</li>
+        <li class="nav-item flag-icon-en mx-2 mt-4">@include('components._locale',['lang'=>'en','nation'=>'gb'])AAA</li>
+        <li class="nav-item flag-icon-es mx-2 mt-4">@include('components._locale',['lang'=>'es','nation'=>'es'])AAA</li>
+      </ul>
+      
+          
           @guest
-
-            
-              <li class="nav-item flag-icon-it mx-2 mt-4">@include('components._locale',['lang'=>'it','nation'=>'it'])AAA</li>
-              <li class="nav-item flag-icon-en mx-2 mt-4">@include('components._locale',['lang'=>'en','nation'=>'gb'])AAA</li>
-              <li class="nav-item flag-icon-es mx-2 mt-4">@include('components._locale',['lang'=>'es','nation'=>'es'])AAA</li>
-            </ul>
-
-
             <li class="nav-item ms-3">
               <a class="nav-link tre fs-5" href="{{route('login')}}"><i class="fs-5 me-2 fas fa-sign-in-alt"></i>{{__('ui.login')}}</a>
             </li>

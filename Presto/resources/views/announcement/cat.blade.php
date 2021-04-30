@@ -33,17 +33,17 @@
                                 </div>
                                 <div class="col-6">
                                     <h2><b>{{ $announcement->title }}</b></h2>
-                                    <p>Creato il: {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>
+                                    <p>{{__('ui.created_on')}} {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>
                                     <h4 class="text-truncate">{{ $announcement->description }}</h4>
-                                    <h5>{{ $announcement->price }} $</h5>
-                                    <h6>Annuncio di: {{ $announcement->user->name }}</h6>
-                                    <div> Categoria:<a class="link-cat"
+                                    <h5>{{__('ui.price')}} {{ $announcement->price }} $</h5>
+                                    <h6>{{__('ui.created_by')}} {{ $announcement->user->name }}</h6>
+                                    <div>{{__('ui.category')}}<a class="link-cat"
                                             href="{{ route('announcement.cat', [$announcement->category->name, $announcement->category->id]) }}">
                                             {{ $announcement->category->name }}</a></div>
                                     <button class="btn btn-custom my-3"> <a
                                             href="{{ route('announcement.show', compact('announcement')) }}"
                                             class="link-cat">
-                                            <b>Vai al dettaglio</b> </a></button>
+                                            <b>{{__('ui.go_detail')}}</b> </a></button>
 
                                 </div>
                             </div>
@@ -58,10 +58,10 @@
                     <div class="col-12">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <h1><b>Ops,non ci sono annunci qui!</b></h1>
+                                <h1><b>{{__('ui.category')}} {{$category->name}}</b></h1>
                                 <button class="text-center my-5 btn btn-custom">
                                     <a class="link-cat" href="{{ route('announcement.index') }}">
-                                        Cerca altro nelle categorie</a>
+                                        {{__('ui.search_other')}}</a>
                                 </button>
                             </div>
                             <div class="col-md-6">
