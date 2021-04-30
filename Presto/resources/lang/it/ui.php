@@ -40,6 +40,33 @@ Nessuna commisione e affidabilità al 100%',
 
 
 
+
+//login
+'login' => 'Accedi',
+'email' => 'Indirizzo email',
+'password' => 'Password',
+'login' => 'Accedi',
+
+//registrazione, form
+'register' => 'Registrati',
+'user_name' => 'Nome utente',
+'insert_email' => 'Inserisci nome utente',
+'password' => 'Password',
+'confirm_password' => 'Conferma password',
+'register' => 'Registrati',
+
+//create
+'insert_announcement' => 'Inserisci annuncio',
+'title' => 'Titolo',
+'select_category' => 'Seleziona categoria',
+'image' => 'Immagine',
+'price' => 'Prezzo',
+'description' => 'Descrizione',
+'insert' => 'Inserisci'
+
 ];
+
+
+
 
 

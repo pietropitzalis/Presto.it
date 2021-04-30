@@ -37,6 +37,34 @@ No commission and 100% reliability',
 'detail'=>'ANNOUNCEMENT DETAIL',
 'no_announcements'=>'Oops, there are no ads here!',
 'search_other'=>'Search more in the categories',
+
+//login
+'login' => 'Login',
+'email' => 'Email',
+'password' => 'Password',
+'login' => 'Login',
+
+//register
+'register' => 'Register',
+'user_name' => 'User name',
+'insert_email' => 'Insert email',
+'password' => 'Password',
+'confirm_password' => 'Confirm password',
+'register' => 'Register',
+
+//create
+'insert_announcement' => 'Insert announcement',
+'title' => 'Title',
+'select_category' => 'Select category',
+'image' => 'Image',
+'price' => 'Price',
+'description' => 'Description',
+'insert' => 'Insert',
+
+
+
+
+
 ];
 
 
