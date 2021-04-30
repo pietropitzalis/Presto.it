@@ -40,6 +40,7 @@
                                 href="{{ route('announcement.show', compact('announcement')) }}" class="link-cat">
                                 <b>Vai al dettaglio</b> </a></button>
 
+                            
                     </div>
                 </div>
             </div>
