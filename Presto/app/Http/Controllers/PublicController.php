@@ -20,4 +20,9 @@ class PublicController extends Controller
         return view('announcement.edit',compact('announcement'));
     }
 
+    public function locale($locale){
+        session()->put('locale',$locale);
+        return redirect()->back();
+    }
+
 }

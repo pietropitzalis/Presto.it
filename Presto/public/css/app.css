@@ -10947,8 +10947,8 @@ h1,h2,h3,h4,h5,h6{
 .flag-icon-it {
     background-image: url(/img-flag-icon/italy.svg);
     background-repeat: no-repeat;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
     color: transparent!important;
     
 }
@@ -10956,16 +10956,16 @@ h1,h2,h3,h4,h5,h6{
 .flag-icon-en {
     background-image: url(/img-flag-icon/united-kingdom.svg);
     background-repeat: no-repeat;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
     color: transparent!important;
 }
 
 .flag-icon-es {
     background-image: url(/img-flag-icon/spain.svg);
     background-repeat: no-repeat;
-    height: 5px;
-    width: 5px;
+    height: 20px;
+    width: 20px;
     color: transparent!important;
 }
 

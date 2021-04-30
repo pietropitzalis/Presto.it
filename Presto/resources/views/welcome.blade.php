@@ -13,7 +13,7 @@
             <div class="row h-100 justify-content-center">
                 <div class="col-12 text-center">
                     <h1 class="title nav-link">Presto.it</h1>
-                    <h2 class="lead subTitle">Un mondo di offerte e spedizioni alla velocità della luce!</h2>
+                    <h2 class="lead subTitle">{{__('ui.welcome')}}</h2>
                     <div class="container">
                         <div class="col-12">
                         <div class="row justify-content-center">
@@ -23,7 +23,8 @@
                                                 class="form-control"/>
                                             <label class="form-label" for="form1"></label>
                                             <button type="submit" class="btn btn-custom">
-                                                <i class="fas fa-search me-3"></i>Cerca nelle categorie
+                                                <i class="fas fa-search me-3"></i>
+                                                <span>{{__('ui.search')}}</span>
                                             </button>
                                         </form>            
                                     </div>
@@ -37,11 +38,11 @@
 
 
     </header>
-    <h6 class="subsubTitle mt-5 text-center"> Vuoi vendere in fretta e senza sforzi?   <button class="ms-4 btn btn-custom"><a class="link-cat fs-4"
-        href="{{ route('announcement.create') }}"><i class="fs-5 me-2 far fa-plus-square"></i> Inserisci un annuncio!</a></button></h6>
+    <h6 class="subsubTitle mt-5 text-center">{{__('ui.slogan')}}<button class="ms-4 btn btn-custom"><a class="link-cat fs-4"
+        href="{{ route('announcement.create') }}"><i class="fs-5 me-2 far fa-plus-square"></i>{{__('ui.announcement')}}</a></button></h6>
     {{-- SEZIONE CATEGORIE --}}
     <div class="row justify-content-center">
-        <h2 class="text-center mt-5">Esplora le categorie:</h2>
+        <h2 class="text-center mt-5">{{__('ui.explore_category')}}</h2>
         @foreach ($categories as $category)
             <div class="col-12 col-md-3 text-center ms-5">
                 <div class="card mt-4">
@@ -49,7 +50,7 @@
                         <h5 class="card-title mt-5 text-center my-4"><i class="fs-4 fas fa-store"></i>
                             {{ $category->name }}</h5>
                         <button class="btn btn-custom text-center"> <a class="link-cat"
-                                href="{{ route('announcement.cat', [$category->name, $category->id]) }}">Esplora</a></button>
+                                href="{{ route('announcement.cat', [$category->name, $category->id]) }}">{{__('ui.explore')}}</a></button>
                     </div>
                 </div>
             </div>
@@ -66,10 +67,8 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="card-body mt-5">
-                                <h5 class="card-title mt-5">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title mt-5">{{__('ui.carousel1')}}</h5>
+                                <p class="card-text">{{__('ui.carousel1_text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -83,10 +82,8 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="card-body mt-5">
-                                <h5 class="card-title mt-5">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title mt-5">{{__('ui.carousel2')}}</h5>
+                                <p class="card-text">{{__('ui.carousel2_text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -100,10 +97,8 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="card-body mt-5">
-                                <h5 class="card-title mt-5">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title mt-5">{{__('ui.carousel3')}}</h5>
+                                <p class="card-text">{{__('ui.carousel3_text')}}</p>
                             </div>
                         </div>
                     </div>
