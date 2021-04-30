@@ -7,6 +7,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           @guest
+
+          <li class="nav-item ms-3 dropdown me-5">
+            <a class="nav-link tre fs-5 dropdown-toggle me-5 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fs-5 me-2 fa-user-check"></i> Languanges 
+            </a>
+            <ul class="dropdown-menu  mt-2 log" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-center" href=""><span  class="flag-icon-it fs-3">AA</span></a></li>
+              <li><a class="dropdown-item text-center" href=""><span class="flag-icon-es fs-3">AA</span></a></li>
+              <li><a class="dropdown-item text-center" href=""><span class="flag-icon-en fs-3">AA</span></a></li>
+            </ul>
+
+
             <li class="nav-item ms-3">
               <a class="nav-link tre fs-5" href="{{route('login')}}"><i class="fs-5 me-2 fas fa-sign-in-alt"></i> Login </a>
             </li>
@@ -34,6 +46,10 @@
               <a class="nav-link tre fs-5" href="{{route('revisor.home')}}"><i class="fs-5 me-2 far fa-plus-square"></i> <span>{{\App\Models\Announcement::toBeRevisionedCount()}}</span> </a>
             </li>
             @endif
+
+
+
+              
           <li class="nav-item ms-3 dropdown me-5">
             <a class="nav-link tre fs-5 dropdown-toggle me-5 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fas fs-5 me-2 fa-user-check"></i> Ciao,{{Auth::user()->name}} 
