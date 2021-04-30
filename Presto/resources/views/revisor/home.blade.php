@@ -89,7 +89,7 @@
     @else
 
     <div class="col-12 text-center bg-danger mt-3 text-light">
-        <h1>Non ci sono annunci da revisionare!!</h1>
+        <h1>Non ci sono annunci da revisionare</h1>
     </div>
     @endif
 
