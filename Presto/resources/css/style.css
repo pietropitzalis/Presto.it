@@ -19,6 +19,13 @@ h1{
 }
 .nav-link{
     color: var(--tre)!important;
+    transition: all 0.4s;
+
+}
+.nav-link:hover{
+    color: var(--tre)!important;
+    
+    transform: scale(1.1);
 
 }
 
@@ -33,11 +40,14 @@ h1{
 .link-cat{
     color: var(--tre)!important;
     text-decoration: none;
+    
 }
 
 .link-cat:hover{
    color: var(--tre)!important;
     text-decoration: none;
+    
+
 }
 
 .btn-custom{
