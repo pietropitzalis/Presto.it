@@ -10918,15 +10918,6 @@ h1,h2,h3,h4,h5,h6{
     
 }
 
-.ft-colleck-col {
-    color: white;
-}
-
-
-.fs-footer {
-    font-size: 16px;
-}
-
 .subTitle {
     color: var(--tre);
     font-size: 40px;
@@ -10947,5 +10938,35 @@ h1,h2,h3,h4,h5,h6{
     margin-top:300px !important;
 }
 
+@media screen and (max-width: 768px){
+    .cat{
+        margin-top: 3px !important;
+    }
+}
+
+.flag-icon-it {
+    background-image: url(/img-flag-icon/italy.svg);
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 5px;
+    color: transparent!important;
+    
+}
+
+.flag-icon-en {
+    background-image: url(/img-flag-icon/united-kingdom.svg);
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 5px;
+    color: transparent!important;
+}
+
+.flag-icon-es {
+    background-image: url(/img-flag-icon/spain.svg);
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 5px;
+    color: transparent!important;
+}
 
 
