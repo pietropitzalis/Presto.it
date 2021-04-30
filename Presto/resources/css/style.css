@@ -6,6 +6,10 @@
 
 }
 
+.tre{
+    color: var(--tre) !important;
+}
+
 *{
     font-family: 'Asap Condensed', sans-serif;
 }
@@ -45,7 +49,7 @@
 .masthead {
     height: 80vh;
     min-height: 500px;
-    background-image:url(/img/sell.png);
+    background-image:url(/img/pianetino.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

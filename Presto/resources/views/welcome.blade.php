@@ -3,26 +3,41 @@
     @if (session('access.denied.revisor.only'))
 
     <div class="alert alert-danger fs-1 text-center">
-        Accesso non consentito STRONZO - solo per revisori
+        Accesso non consentito - solo per revisori
     </div>
         
     @endif
     
     <header class="masthead">
         <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-              <h1 class="">Presto.it</h1>
-              <p class="lead ">Perchè tenere la roba che non utilizzi più?Mettila in vedita con noi!</p>
-              <button class="btn btn-custom"><a class="link-cat" href="{{route('announcement.create')}}">Inserisci annuncio</a></button>
-              <form action="{{route('announcement.search')}}" method="GET">
-                <input type="text" name="q" placeholder="Ricerca...">
-                <button type="submit">Cerca</button>
-              </form>
+            <div class="row h-100 justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="title nav-link tre fs-1 mt-5">Presto.it</h1>
+                    <h2 class="lead subTitle tre fs-2 mt-5">Un mondo di offerte e spedizioni alla velocità della luce!</h2>
+                    
+                    <div class="container">
+                        <div class="row height d-flex justify-content-center">
+
+                            <div class="col-md-3">
+                                <form action="{{ route('announcement.search') }}" method="GET">
+                                    <input type="text" name="q" placeholder="Ricerca..." id="form1"
+                                        class="form-control" />
+                                    <label class="form-label" for="form1"></label>
+                                    <button type="submit" class="tre btn btn-custom col-1">
+                                </form>
+
+                            </div>
+                            
+                              <i class="fas tre fa-search me-3"></i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </header>
+
+
+    </header>
 
     {{-- SEZIONE CATEGORIE --}}
     <div class="row justify-content-center">
