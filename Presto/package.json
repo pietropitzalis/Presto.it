@@ -12,6 +12,10 @@
     "devDependencies": {
         "axios": "^0.21",
         "flag-icon-css": "^3.5.0",
+<<<<<<< HEAD
+=======
+        "handlebars": "^4.7.7",
+>>>>>>> 99d720c8ff029faa1bd7f6f6f56970a64cbd20d0
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
