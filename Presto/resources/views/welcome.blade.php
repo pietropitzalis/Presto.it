@@ -46,8 +46,8 @@
     <div class="row justify-content-center">
         <h2 class="text-center mt-5">{{__('ui.explore_category')}}</h2>
         @foreach ($categories as $category)
-            <div class="col-12 col-md-3 text-center ms-5">
-                <div class="card mt-4">
+            <div class="col-12 col-md-3 text-center ms-5 ">
+                <div class=" card mt-4 hover">
                     <div class="card-body">
                         <h5 class="card-title mt-5 text-center my-4"><i class="fs-4 fas fa-store"></i>
                             {{ $category->name }}</h5>

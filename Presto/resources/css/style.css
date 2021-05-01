@@ -139,3 +139,15 @@ h1,h2,h3,h4,h5,h6{
     width: 20px;
     color: transparent!important;
 }
+/* PROVA CAT */
+
+.hover{
+    transition: all 0.4s;
+}
+.hover:hover{
+    transform: scale(1.02);
+    
+    -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.31); 
+    box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.31);
+}
+  

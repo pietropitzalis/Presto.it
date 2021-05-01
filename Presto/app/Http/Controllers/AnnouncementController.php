@@ -57,10 +57,16 @@ class AnnouncementController extends Controller
     public function create()
     {
         $categories= Category::all();
-        return view('announcement.create');
+        $uniqueSecret = base_convert(sha1(uniqid(mt_rand())), 16, 36);
+        return view('announcement.create',compact('uniqueSecret'));
 
 
     }
+    // public function newAnnouncement(){
+       
+
+    //     return view('announcements.create', );
+    // }
     
     /**
      * Store a newly created resource in storage.
@@ -87,9 +93,19 @@ class AnnouncementController extends Controller
                     'category_id'=>$request->category,
                     ]);
             }
+            $uniqueSecret = $request->input('uniqueSecret');
+            
+            
 
         return redirect(route('announcement.index'))->with('message', "Annuncio inserito con successo,al momento e' in attesa di revisione,verrà pubblicato appena possibile");
     }
+
+
+
+     public function uploadImage(Request $req){
+         dd($req->input());
+
+     }
 
     /**
      * Display the specified resource.

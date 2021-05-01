@@ -11,17 +11,16 @@
     },
     "devDependencies": {
         "axios": "^0.21",
+        "dropzone": "^5.9.2",
         "flag-icon-css": "^3.5.0",
-<<<<<<< HEAD
-=======
-        "handlebars": "^4.7.7",
->>>>>>> 99d720c8ff029faa1bd7f6f6f56970a64cbd20d0
+        "jquery": "^3.6.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
     },
     "dependencies": {
         "@popperjs/core": "^2.9.2",
-        "bootstrap": "^5.0.0-beta3"
+        "bootstrap": "^5.0.0-beta3",
+        "jsdom": "^16.5.3"
     }
 }

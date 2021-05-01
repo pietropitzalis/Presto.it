@@ -42,4 +42,6 @@ class PublicController extends Controller
 
         return redirect(route('contatti'))->with('message','La tua richiesta è stata inoltrata,ti ricontatteremo al più presto!');
     }
+
+    
 }

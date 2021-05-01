@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <title>Presto.it</title>
 
     {{-- fontaweson --}}
@@ -11,13 +12,24 @@
     {{-- google-font --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+
+    
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+    
+    
     {{-- MIO CSS --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
     <x-navbar/>
+
     {{$slot}}
     <x-footer/>
     <script src="{{asset('js/app.js')}}"></script>
+    
+
+
+
+    
 </body>
 </html>

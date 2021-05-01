@@ -45,3 +45,6 @@ Route::post('/locale/{locale}',[PublicController::class,'locale'])->name('locale
 //mail
 Route::get('/contatti' , [PublicController::class,'contacts'])->name('contatti');
 Route::post('/contatti/submit',[PublicController::class , 'submit'])->name('contatti.submit');
+
+// images
+Route::post('announcement/images/upload',[AnnouncementController::class, 'uploadImage'])->name('announcement.images.upload');
