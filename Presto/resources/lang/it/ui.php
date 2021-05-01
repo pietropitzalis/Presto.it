@@ -35,12 +35,6 @@ Nessuna commisione e affidabilità al 100%',
 'no_announcements'=>'Ops,non ci sono annunci qui!',
 'search_other'=>'Cerca altro nelle categorie',
 
-
-
-
-
-
-
 //login
 'login' => 'Accedi',
 'email' => 'Indirizzo email',
@@ -60,9 +54,12 @@ Nessuna commisione e affidabilità al 100%',
 'title' => 'Titolo',
 'select_category' => 'Seleziona categoria',
 'image' => 'Immagine',
-'price' => 'Prezzo',
+'price' => 'Prezzo:',
 'description' => 'Descrizione',
-'insert' => 'Inserisci'
+'insert' => 'Inserisci',
+
+//contatti
+'contact'=>'Diventa un revisore',
 
 ];
 

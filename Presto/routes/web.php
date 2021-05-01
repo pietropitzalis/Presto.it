@@ -41,3 +41,7 @@ Route::get('/profile',[PublicController::class , 'profile'])->name('profile');
 
 // multilingua
 Route::post('/locale/{locale}',[PublicController::class,'locale'])->name('locale');
+
+//mail
+Route::get('/contatti' , [PublicController::class,'contacts'])->name('contatti');
+Route::post('/contatti/submit',[PublicController::class , 'submit'])->name('contatti.submit');

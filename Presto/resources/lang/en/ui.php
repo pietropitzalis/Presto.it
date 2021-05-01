@@ -57,12 +57,12 @@ No commission and 100% reliability',
 'title' => 'Title',
 'select_category' => 'Select category',
 'image' => 'Image',
-'price' => 'Price',
+'price' => 'Price:',
 'description' => 'Description',
 'insert' => 'Insert',
 
-
-
+//contatti
+'contact'=>'Became a revisor',
 
 
 ];

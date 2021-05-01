@@ -48,7 +48,7 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 //register
 'register' => 'Registrado',
 'user_name' => 'Nombre de usuario',
-'insert_email' => 'insertar correo',
+'insert_email' => 'Insertar correo',
 'password' => 'Contraseña',
 'confirm_password' => 'Confirmar la contraseña',
 'register' => 'Registrarse',
@@ -58,13 +58,12 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'title' => 'Título',
 'select_category' => 'Seleccionar la categoría',
 'image' => 'Imagen',
-'price' => 'Precio',
+'price' => 'Precio:',
 'description' => 'Descripción',
 'insert' => 'Insertar',
 
-
-
-
+//contatti
+'contact'=>'Conviértete en revisor',
 
 ];
 
