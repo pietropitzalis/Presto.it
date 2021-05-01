@@ -38,3 +38,10 @@ Route::post('/revisor/announcement/{id}/accept' , [RevisorController::class,'acc
 Route::post('/revisor/announcement/{id}/reject' , [RevisorController::class,'reject'])->name('revisor.reject');
 
 Route::get('/profile',[PublicController::class , 'profile'])->name('profile');
+
+// multilingua
+Route::post('/locale/{locale}',[PublicController::class,'locale'])->name('locale');
+
+//mail
+Route::get('/contatti' , [PublicController::class,'contacts'])->name('contatti');
+Route::post('/contatti/submit',[PublicController::class , 'submit'])->name('contatti.submit');
