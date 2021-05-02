@@ -18,13 +18,15 @@
                     @csrf 
                     <input type="hidden" name="uniqueSecret" class="form-control" value="{{$uniqueSecret}}">
                     <div class="mb-4">
-                        <label for="title" class="form-label">{{__('ui.title')}}</label>
+                        <label for="title" class="form-label">{{ __('ui.title') }}</label>
                         <input type="text" name="title" class="form-control" id="title">
                     </div>
                     <div class="my-3">
-                        <label for="exampleInputEmail2" class="form-label me-3">{{__('ui.select_category')}}</label>
-    
-    
+                        <label for="exampleInputEmail2" class="form-label me-3">{{ __('ui.select_category') }}</label>
+                        <select name="category">
+                            @foreach ($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            @endforeach
                         </select>
                         <form action="{{ route('announcement.store') }}" method="post">
                             @csrf
@@ -36,6 +38,8 @@
     
                             </select>
                     </div>
+                    <div class="mb-3">
+                        <label for="images" class="form-label" id="drophere">{{ __('ui.image') }}</label>
 
                     
                         <div class="mb-3 form-group row">
@@ -61,16 +65,17 @@
 
 
                         <div class="mb-3">
-                            <label for="price" class="form-label">{{__('ui.price')}}</label>
+                            <label for="price" class="form-label">{{ __('ui.price') }}</label>
                             <input type="text" name="price" class="form-control" id="price">
                         </div>
-                        <label for="description">{{__('ui.description')}}</label>
+                        <label for="description">{{ __('ui.description') }}</label>
                         <textarea name="description" id="descr" cols="102" rows="5"></textarea>
-                        <button class="btn btn-warning my-3" type="submit">{{__('ui.insert')}}</button>
+                        <button class="btn btn-warning my-3" type="submit">{{ __('ui.insert') }}</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 
-    
+
 </x-layout>
