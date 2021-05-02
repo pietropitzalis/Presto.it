@@ -107,7 +107,7 @@ class AnnouncementController extends Controller
                 $i=new AnnouncementImage();
 
                 $fileName = basename($image);
-                $newFileName = "public/announcements/{$ $announcement->id}/{$fileName}";
+                $newFileName = "public/announcements/{$announcement->id}/{$fileName}";
                 Storage::move($image, $newFileName);
 
 
@@ -119,7 +119,7 @@ class AnnouncementController extends Controller
 
             File::deleteDirectory(storage_path("/app/public/temp/{$uniqueSecret}"));
 
-            dd($request->all());
+            // dd($request->all());
         return redirect(route('announcement.index'))->with('message', "Annuncio inserito con successo,al momento e' in attesa di revisione,verrà pubblicato appena possibile");
     }
 
@@ -152,9 +152,9 @@ class AnnouncementController extends Controller
          
         $uniqueSecret = $req->input('uniqueSecret');
 
-        $fileName = $req->file('file')->store('public/temp/{$uniqueSecret}');
+        $fileName = $req->file('file')->store("public/temp/{$uniqueSecret}");
 
-        session()->push('images.{$uniqueSecret}', $fileName);
+        session()->push("images.{$uniqueSecret}", $fileName);
 
         return response()->json(
                 [
@@ -198,7 +198,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        
+        //
     }
 
     /**

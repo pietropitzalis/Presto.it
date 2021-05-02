@@ -16,38 +16,47 @@
 
 
                 <h3>DEBUG:: SECRET {{ $uniqueSecret }}</h3>
-                <form method="POST" action="{{ route('announcement.store') }}" enctype="multipart/form-data">
-                    @csrf
-                    <input type="hidden" name="uniqueSecret" class="form-control" value="{{ $uniqueSecret }}">
-                    <div class="mb-4">
-                        <label for="title" class="form-label">{{ __('ui.title') }}</label>
-                        <input type="text" name="title" class="form-control" id="title">
-                    </div>
-                    <div class="my-3">
-                        <label for="exampleInputEmail2" class="form-label me-3">{{ __('ui.select_category') }}</label>
-                        <select name="category">
-                            @foreach ($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="images" class="form-label" id="drophere">{{ __('ui.image') }}</label>
 
-                        <div id="drophere" class="dropzone"></div>
-                    </div>
-                        <div class="mb-3">
-                            <label for="price" class="form-label">{{ __('ui.price') }}</label>
-                            <input type="text" name="price" class="form-control" id="price">
-                        </div>
-                        <label for="description">{{ __('ui.description') }}</label>
-                        <textarea name="description" id="descr" cols="102" rows="5"></textarea>
-                        <button class="btn btn-warning my-3" type="submit">{{ __('ui.insert') }}</button>
-                    </div>
-                </form>
+                <form method="POST" action="{{ route('announcement.store') }}" enctype="multipart/form-data"
+                class="py-4 my-4 px-4">
+                
+                @csrf
+                <input type="hidden" name="uniqueSecret" value="{{ $uniqueSecret }}">
+
+                <div class="mb-3">
+                    <label for="title" class="form-label">{{ __('ui.title') }}</label>
+                    <input type="text" name="title" class="form-control" id="title">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">{{ __('ui.select_category') }}</label>
+                    <select name="category" class="mb-3">
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}">{{ ucfirst($category->name) }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">{{ __('ui.description') }}</label>
+                    <textarea name="description" id="description" class="form-control rounded" cols="30"
+                        rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">{{ __('ui.price') }}</label>
+                    <input type="text" name="price" class="form-control" id="price">
+                </div>
+                <div class="mb-3">
+                    
+
+                    <label for="drophere" class="form-label">{{ __('ui.image') }}</label>
+
+                    <div class="dropzone" name="img" id="drophere"></div>
+                </div>
+
+                <button type="submit" class="btn btn-custom tc-base">{{ __('ui.insert') }}</button>
+
+            </form>
             </div>
         </div>
     </div>
-
 
 </x-layout>

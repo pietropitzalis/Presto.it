@@ -3116,7 +3116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var csrfToken = $('meta[name="csrf-token"]').attr('content');
     var uniqueSecret = $('input[name="uniqueSecret"]').attr('value');
     var myDropzone = new window.Dropzone('#drophere', {
-      url: '/announcements/images/upload',
+      url: '/announcement/images/upload',
       params: {
         _token: csrfToken,
         uniqueSecret: uniqueSecret
@@ -3158,10 +3158,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-if ($("#drophere").lenght > 0) {
-  alert('ci sono');
-}
 
 /***/ }),
 

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
         let csrfToken= $('meta[name="csrf-token"]').attr('content');
         let uniqueSecret= $('input[name="uniqueSecret"]').attr('value');
         let myDropzone= new window.Dropzone('#drophere', {
-            url:'/announcements/images/upload',
+            url:'/announcement/images/upload',
             params:{
                 _token:csrfToken,
                 uniqueSecret:uniqueSecret
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     type: 'GET',
                     url: '/announcement/images',
                     data: {
-                        uniqueSecret: uniqueSecret
+                        uniqueSecret:uniqueSecret
                     },
                     dataType: 'json'
 
@@ -59,6 +59,3 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-if($("#drophere").lenght > 0){
-    alert('ci sono');
-}
