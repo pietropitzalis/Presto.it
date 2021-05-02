@@ -1,6 +1,6 @@
 require('bootstrap');
-// window.Dropzone = require('dropzone');
-// Dropzone.autoDiscover = false;
-// window.$=window.jQuery=require('jquery');
 
-// require('./announcementImage');
+window.$=window.jQuery=require('jquery');
+document.Dropzone = require('dropzone');
+Dropzone.autoDiscover = false;
+require('./announcementImage');
