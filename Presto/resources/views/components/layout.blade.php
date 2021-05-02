@@ -7,16 +7,11 @@
     <meta name="csrf-token" content="{{csrf_token()}}">
     <title>Presto.it</title>
 
-    {{-- fontaweson --}}
+    {{-- fontawesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
     {{-- google-font --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
 
-    
-    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
-    
-    
     {{-- MIO CSS --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
@@ -26,10 +21,7 @@
     {{$slot}}
     <x-footer/>
     <script src="{{asset('js/app.js')}}"></script>
-    
 
 
-
-    
 </body>
 </html>

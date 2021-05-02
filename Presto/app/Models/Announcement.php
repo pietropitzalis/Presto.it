@@ -16,8 +16,8 @@ class Announcement extends Model
     protected $fillable = [
         'title',
         'description',
-        'img',
         'price',
+        'image_id',
         'category_id',
         'is_accepted',
     ];
@@ -45,10 +45,13 @@ class Announcement extends Model
             'altro'=>'annuncio vendita post qualcosa',
             'category'=>$category,
         ];
-        
-        
 
         return $array;
+    }
+
+    public function images(){
+        
+        return $this->hasMany(AnnouncementImage::class);
     }
 
 }

@@ -46,23 +46,31 @@
                                 {{ $announcement->price }}
                             </div>
                         </div>
+
+                        <hr>
+
                         <div class="row">
                             <div class="col-md-2">
-                                <h3>Immagine:</h3>
+                                <h3>Immagini:</h3>
                             </div>
                             <div class="col-md-10">
-                                <div class="row">
+                                @foreach ($announcement->images as $image)
+                                <div class="row mb-2">
                                     <div class="col-md-4">
-                                        <img src="https://via.placeholder.com/150" alt="{{ $announcement->title }}">
+                                        <img
+                                         src="{{Storage::url($image->file)}}" 
+                                         alt="" class="rounded">
                                     </div>
-                                    <div class="col-md-8">... ... ...</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="https://via.placeholder.com/150" alt="{{ $announcement->title }}">
+                                    <div class="col-md-8">
+                                        {{$image->id}} <br>
+                                        {{$image->file}} <br>
+                                        {{Storage::url($image->file)}} <br>
+
+                                        
                                     </div>
-                                    <div class="col-md-8">... ... ...</div>
                                 </div>
+                                    
+                                @endforeach
                             </div>
                         </div>
                     </div>
