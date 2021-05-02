@@ -54,7 +54,7 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'register' => 'Registrarse',
 
 //create
-'insert_announcement' => 'Insert announcement',
+'insert_announcement' => 'Publicar Anuncio',
 'title' => 'Título',
 'select_category' => 'Seleccionar la categoría',
 'image' => 'Imagen',

@@ -48,3 +48,5 @@ Route::post('/contatti/submit',[PublicController::class , 'submit'])->name('cont
 
 // images
 Route::post('announcement/images/upload',[AnnouncementController::class, 'uploadImage'])->name('announcement.images.upload');
+Route::delete('/announcement/images/remove',[AnnouncementController::class , 'removeImage'])->name('announcement.images.remove');
+Route::get('/announcement/images',[AnnouncementController::class , 'getImages'])->name('announcement.images');
