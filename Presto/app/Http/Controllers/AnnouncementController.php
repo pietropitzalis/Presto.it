@@ -97,7 +97,7 @@ class AnnouncementController extends Controller
 
             $uniqueSecret = $request->input('uniqueSecret');
             
-            $images = session()->get("images.{$uniqueSecret}");
+        
 
             $images = session()->get("images.{$uniqueSecret}",[]);
             $removedImages = session()->get("removedImages.{$uniqueSecret}" , []);
@@ -109,7 +109,13 @@ class AnnouncementController extends Controller
 
                 $fileName = basename($image);
                 $newFileName = "public/announcements/{$announcement->id}/{$fileName}";
+                
                 Storage::move($image, $newFileName);
+
+
+                $i->file = $newFileName;
+                $i->announcement_id = $announcement->id;
+
                 dispatch(new ResizeImage(
                     $newFileName,
                     300,
@@ -122,9 +128,7 @@ class AnnouncementController extends Controller
                 ));
 
 
-                $i->file = $newFileName;
-                $i->announcement_id = $announcement->id;
-
+              
                 $i->save();
 
             }
@@ -151,7 +155,7 @@ class AnnouncementController extends Controller
         foreach ($images as $image) {
             $data[] = [
                 'id' => $image,
-                'src' => AnnouncementImage::getUrlByFilePath($image,120,120),
+                'src' => AnnouncementImage::getUrlByFilePath($image,120 ,120),
             ];
         }
 

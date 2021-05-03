@@ -17,6 +17,7 @@ class Announcement extends Model
         'title',
         'description',
         'price',
+        'image',
         'image_id',
         'category_id',
         'is_accepted',

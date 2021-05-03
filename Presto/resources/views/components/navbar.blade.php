@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
 
                 <li class="nav-item flag-icon-it mx-2 mt-2">
                     @include('components._locale',['lang'=>'it','nation'=>'it'])AAA</li>
@@ -73,10 +73,7 @@
                             @csrf
                         </form>
                     </ul>
-                    {{-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> --}}
+                </li>
                 @endguest
         </div>
     </div>
