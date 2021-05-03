@@ -16,16 +16,28 @@
         <div class="row justify-space-between justify-content-center">
             <div class="col-md-8 shadow">
                 <div class="row my-5">
-                    <div class="col-6">
-                        @if ($announcement->img)
-                        <img src="{{ $image->getUrl(300, 150) }}" class="rounded float-wright"
-                        alt="">
-                                alt="{{ $announcement->title }}">
-                        @else
-                            <img src="https://via.placeholder.com/300" class="img-fluid"
-                                alt="{{ $announcement->title }}">
-                        @endif
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner active">
+                        
+                        @foreach ($announcement->images as $image)
+                            <div class="carousel-item {{$loop->iteration == 1 ? 'active' : ''}}">
+                            <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">
+                        </div> 
+                        @endforeach
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
+                </div>
+                
+                
                     <div class="col-6">
                         <h2><b>{{ $announcement->title }}</b></h2>
                         <p>{{ __('ui.created_on') }} {{ $announcement->created_at->format('d-m-Y- H:i:s') }}</p>

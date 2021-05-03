@@ -6,7 +6,7 @@
             </div>
         @endif
     </div>
-
+    <div class="container">
     <div class="row mt-5">
         <div class="container col-12">
             <div class="col-md-6 offset-md-3 my-5 text-center ">
@@ -14,8 +14,6 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
         <div class="row justify-space-between">
             @foreach ($announcements as $announcement)
             
@@ -27,13 +25,9 @@
                 
                          
                        @foreach ($announcement->images as $image)
-<<<<<<< HEAD
                       
                        <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">
                         
-=======
-                        <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">   
->>>>>>> ae8068773268932cf6d883548d56fb1547ba11db
                        @endforeach
                     </div>
                 </div>
