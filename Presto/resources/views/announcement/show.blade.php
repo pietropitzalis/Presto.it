@@ -18,7 +18,8 @@
                 <div class="row my-5">
                     <div class="col-6">
                         @if ($announcement->img)
-                            <img src="{{ Storage::url($announcement->img) }}" class="img-fluid"
+                        <img src="{{ $image->getUrl(300, 150) }}" class="rounded float-wright"
+                        alt="">
                                 alt="{{ $announcement->title }}">
                         @else
                             <img src="https://via.placeholder.com/300" class="img-fluid"
