@@ -22,18 +22,18 @@
         <div class="col-12 my-5 col-md-4 card card-custom shadow">
                <div class="row">
                     <div class="col-6">
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                
+                         
                        @foreach ($announcement->images as $image)
-                           <div class="row mb-2">
-                               <div class="col-md-4">
-                                   <img src="{{Storage::url($image->file)}}" alt="">
-                               </div>
-                               <div class="col-md-8">
-                                    {{$image->id}} <br>
-                                     {{$image->file}} <br>
-                                     {{Storage::url($image->file)}} <br>
-                               </div>
-                           </div>
+                       @if(count($announcement->images) == 1)
+                       {{-- <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt=""> --}}
+                       <img src="{{$announcement->image}}" alt="">
+                        @endif
                        @endforeach
+                    </div>
+                </div>
                     </div>
                     <div class="col-6">
                         <h2><b>{{ $announcement->title }}</b></h2>
