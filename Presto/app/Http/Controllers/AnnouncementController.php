@@ -108,6 +108,7 @@ class AnnouncementController extends Controller
 
                 $fileName = basename($image);
                 $newFileName = "public/announcements/{$announcement->id}/{$fileName}";
+                
                 Storage::move($image, $newFileName);
 
                 $i->file = $newFileName;
@@ -149,7 +150,7 @@ class AnnouncementController extends Controller
         foreach ($images as $image) {
             $data[] = [
                 'id' => $image,
-                'src' => AnnouncementImage::getUrlByFilePath($image,120,120),
+                'src' => AnnouncementImage::getUrlByFilePath($image,120 ,120),
             ];
         }
 
