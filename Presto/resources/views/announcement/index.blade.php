@@ -27,9 +27,13 @@
                 
                          
                        @foreach ($announcement->images as $image)
+<<<<<<< HEAD
                       
                        <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">
                         
+=======
+                        <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">   
+>>>>>>> ae8068773268932cf6d883548d56fb1547ba11db
                        @endforeach
                     </div>
                 </div>

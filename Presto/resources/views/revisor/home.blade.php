@@ -60,7 +60,7 @@
 
                                                 <img src="{{ $image->getUrl(300, 150) }}" class="rounded float-wright"
                                                     alt="">
-                                                    
+
                                                 <div class="col-md-8">
                                                     {{ $image->id }} <br>
                                                     {{ $image->file }} <br>
