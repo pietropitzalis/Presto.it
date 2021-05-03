@@ -96,10 +96,14 @@ class AnnouncementController extends Controller
             
 
             $uniqueSecret = $request->input('uniqueSecret');
+<<<<<<< HEAD
             
         
+=======
+>>>>>>> fb949d766cd60e1b3fb8c956bf9282e8f5484cac
 
             $images = session()->get("images.{$uniqueSecret}",[]);
+
             $removedImages = session()->get("removedImages.{$uniqueSecret}" , []);
 
             $images = array_diff($images,$removedImages);
@@ -112,7 +116,10 @@ class AnnouncementController extends Controller
                 
                 Storage::move($image, $newFileName);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fb949d766cd60e1b3fb8c956bf9282e8f5484cac
                 $i->file = $newFileName;
                 $i->announcement_id = $announcement->id;
 
@@ -127,8 +134,11 @@ class AnnouncementController extends Controller
                     300
                 ));
 
+<<<<<<< HEAD
 
               
+=======
+>>>>>>> fb949d766cd60e1b3fb8c956bf9282e8f5484cac
                 $i->save();
 
             }
@@ -142,10 +152,9 @@ class AnnouncementController extends Controller
     public function getImages(Request $request){
 
         $uniqueSecret = $request->input('uniqueSecret');
-            
-        $images = session()->get("images.{$uniqueSecret}");
 
         $images = session()->get("images.{$uniqueSecret}",[]);
+
         $removedImages = session()->get("removedImages.{$uniqueSecret}" , []);
 
         $images = array_diff($images,$removedImages);
@@ -175,8 +184,6 @@ class AnnouncementController extends Controller
             120,
             120
         ));
-
-        $fileName = $req->file('file')->store("public/temp/{$uniqueSecret}");
 
         session()->push("images.{$uniqueSecret}", $fileName);
 

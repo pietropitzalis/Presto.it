@@ -60,6 +60,7 @@
 
                                                 <img src="{{ $image->getUrl(300, 150) }}" class="rounded float-wright"
                                                     alt="">
+
                                                 <div class="col-md-8">
                                                     {{ $image->id }} <br>
                                                     {{ $image->file }} <br>
@@ -76,35 +77,30 @@
             </div>
         </div>
     </div>
+        <div class="row mb-5">
 
-            <div class="row">
+            <div class="col-md-4 text-end">
+                <form action="{{ route('revisor.reject', $announcement->id) }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-success">Rifiuta</button>
+                </form>
+            </div>
+            <div class="col-md-4 text-end">
+                <form action="{{ route('revisor.accept', $announcement->id) }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-success">Accetta</button>
+                </form>
 
-                <div class="col-md-6 ">
-                    <form action="{{ route('revisor.reject', $announcement->id) }}" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-success">Rifiuta</button>
-                    </form>
-                </div>
-                <div class="col-md-6 text-end">
-                    <form action="{{ route('revisor.accept', $announcement->id) }}" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-success">Accetta</button>
-                    </form>
-
-                </div>
             </div>
         </div>
+        </div>
+        
     @else
 
         <div class="col-12 text-center bg-danger mt-3 text-light">
             <h1>Non ci sono annunci da revisionare</h1>
         </div>
     @endif
-
-
-
-
-
 
 
 
