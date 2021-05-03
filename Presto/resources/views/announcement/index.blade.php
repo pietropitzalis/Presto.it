@@ -27,10 +27,9 @@
                 
                          
                        @foreach ($announcement->images as $image)
-                       @if(count($announcement->images) == 1)
-                       {{-- <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt=""> --}}
-                       <img src="{{$announcement->image}}" alt="">
-                        @endif
+                      
+                       <img src="{{$image->getUrl(300,150)}}" class="rounded float-wright" alt="">
+                        
                        @endforeach
                     </div>
                 </div>
