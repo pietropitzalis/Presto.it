@@ -6,6 +6,9 @@
 
 }
 
+.li::marker{
+    display:none;
+}
 .main{
     background-color: var(--main);
 }

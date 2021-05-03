@@ -58,7 +58,7 @@ No commission and 100% reliability',
 'select_category' => 'Select category',
 'image' => 'Image',
 'price' => 'Price:',
-'description' => 'Description',
+'description' => 'Description:',
 'insert' => 'Insert',
 
 //contatti

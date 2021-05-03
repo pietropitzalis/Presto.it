@@ -59,7 +59,7 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'select_category' => 'Seleccionar la categoría',
 'image' => 'Imagen',
 'price' => 'Precio:',
-'description' => 'Descripción',
+'description' => 'Descripción:',
 'insert' => 'Insertar',
 
 //contatti

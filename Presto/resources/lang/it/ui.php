@@ -55,7 +55,7 @@ Nessuna commisione e affidabilità al 100%',
 'select_category' => 'Seleziona categoria',
 'image' => 'Immagine',
 'price' => 'Prezzo:',
-'description' => 'Descrizione',
+'description' => 'Descrizione:',
 'insert' => 'Inserisci',
 
 //contatti
