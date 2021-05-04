@@ -11,11 +11,11 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="col-md-6 offset-md-3 mt-5">
+            <div class="col-md-6 offset-md-3">
                 <h1 class="my-5 text-center">{{ __('ui.insert_announcement') }}</h1>
 
 
-                <h3>DEBUG:: SECRET {{ $uniqueSecret }}</h3>
+                {{-- <h3>DEBUG:: SECRET {{ $uniqueSecret }}</h3> --}}
 
                 <form method="POST" action="{{ route('announcement.store') }}" enctype="multipart/form-data"
                 class="py-4 my-4 px-4">

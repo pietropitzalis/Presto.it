@@ -19,6 +19,12 @@
 
                     </div>
                     <div class="mb-3">
+                        <label for="email_confirmation" class="form-label">{{__('ui.confirm_register')}}</label>
+                        <input type="email" name="email_confirmation" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">{{__('ui.password')}}</label>
                         <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                     </div>

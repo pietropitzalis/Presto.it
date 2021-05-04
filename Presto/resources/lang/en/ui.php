@@ -51,6 +51,7 @@ No commission and 100% reliability',
 'password' => 'Password',
 'confirm_password' => 'Confirm password',
 'register' => 'Register',
+'confirm_register' => 'Confirm email',
 
 //create
 'insert_announcement' => 'Insert announcement',
@@ -60,6 +61,7 @@ No commission and 100% reliability',
 'price' => 'Price:',
 'description' => 'Description:',
 'insert' => 'Insert',
+
 
 //contatti
 'contact'=>'Became a revisor',

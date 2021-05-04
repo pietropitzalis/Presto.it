@@ -10828,11 +10828,9 @@ textarea.form-control-lg {
   }
 }
 :root{
-    --main: #111D5E;
+    --main: #1a1a1d;
     --sec: #C70039;
-    --tre: #F37121;
-    --qua:#C0E218;
-
+    --tre: #C3073f;
 }
 
 .li::marker{
@@ -10851,7 +10849,7 @@ textarea.form-control-lg {
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:var(--main)
+    color:var(--tre)
 }
 
 .title{

@@ -47,6 +47,7 @@ Nessuna commisione e affidabilità al 100%',
 'insert_email' => 'Inserisci email',
 'password' => 'Password',
 'confirm_password' => 'Conferma password',
+'confirm_register' => 'Conferma email',
 'register' => 'Registrati',
 
 //create

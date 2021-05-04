@@ -2,7 +2,7 @@
 
     @if (session('access.denied.revisor.only'))
 
-        <div class="alert alert-danger fs-1 text-center">
+        <div class="alert alert-danger fs-1 text-center my-5">
             Accesso non consentito-solo per revisori
         </div>
 
