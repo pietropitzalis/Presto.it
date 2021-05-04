@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="col-md-10">
                                     <div class="row mb-2">
-                                        <div class="col-md-4">
+                                        <div class="col-md-8">
                                             @foreach ($announcement->images as $image)
 
                                                 <img src="{{ $image->getUrl(300, 150) }}" class="rounded float-wright"
@@ -79,9 +79,9 @@
                                                             @endforeach
                                                         @endif
                                                     </ul>
-                                            @endforeach
-                                        </div>
-                                    </div>
+                                                </div>
+                                                @endforeach
+                                            </div>
                                 </div>
                             </div>
                         </div>
