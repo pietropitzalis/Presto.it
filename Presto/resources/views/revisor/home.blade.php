@@ -68,8 +68,8 @@
                                                     Violence:{{$image->violence}}
                                                     Racy:{{$image->racy}}
                                                     {{ $image->id }} <br>
-                                                    {{ $image->file }} <br>
-                                                    {{ Storage::url($image->file) }} <br>
+                                                    {{-- {{ $image->file }} <br> --}}
+                                                    {{-- {{ Storage::url($image->file) }} <br> --}}
 
                                             @endforeach
                                         </div>
