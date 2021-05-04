@@ -52,6 +52,7 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'password' => 'Contraseña',
 'confirm_password' => 'Confirmar la contraseña',
 'register' => 'Registrarse',
+'confirm_register' => 'Confirmar correo electrónico',
 
 //create
 'insert_announcement' => 'Publicar Anuncio',
@@ -59,7 +60,7 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 'select_category' => 'Seleccionar la categoría',
 'image' => 'Imagen',
 'price' => 'Precio:',
-'description' => 'Descripción',
+'description' => 'Descripción:',
 'insert' => 'Insertar',
 
 //contatti

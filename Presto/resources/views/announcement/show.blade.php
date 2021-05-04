@@ -8,11 +8,10 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container mb-5">
-      <button class="btn btn-custom"> <a
-        href="{{ route('announcement.index')}}" class="link-cat">
-        <i class="fs-2 fas fa-arrow-circle-left"></i> </a></button>
+        <button class="btn btn-custom"> <a href="{{ route('announcement.index') }}" class="link-cat">
+                <i class="fs-2 fas fa-arrow-circle-left"></i> </a></button>
         <div class="row justify-space-between justify-content-center">
             <div class="col-md-8 shadow">
                 <div class="row my-5">
@@ -61,7 +60,6 @@
             </div>
         </div>
     </div>
-
 
 
 </x-layout>

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
 use App\Http\Requests\AnnouncementReq;
+use App\Jobs\GoogleVisionSafeSearchImage;
 use Illuminate\Support\Facades\Storage;
 
 class AnnouncementController extends Controller
@@ -111,8 +112,7 @@ class AnnouncementController extends Controller
                 
                 Storage::move($image, $newFileName);
 
-                $i->file = $newFileName;
-                $i->announcement_id = $announcement->id;
+               
 
                 dispatch(new ResizeImage(
                     $newFileName,
@@ -124,8 +124,14 @@ class AnnouncementController extends Controller
                     400,
                     300
                 ));
+                
+                $i->file = $newFileName;
+                $i->announcement_id = $announcement->id;
+                
 
                 $i->save();
+                dispatch(new GoogleVisionSafeSearchImage($i->id));
+                    
 
             }
 
