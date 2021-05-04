@@ -62,6 +62,11 @@
                                                     alt="">
 
                                                 <div class="col-md-8">
+                                                    Adult:{{$image->adult}}
+                                                    Spoof:{{$image->spoof}}
+                                                    Medical:{{$image->medical}}
+                                                    Violence:{{$image->violence}}
+                                                    Racy:{{$image->racy}}
                                                     {{ $image->id }} <br>
                                                     {{ $image->file }} <br>
                                                     {{ Storage::url($image->file) }} <br>
