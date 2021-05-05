@@ -11,6 +11,7 @@ use App\Jobs\GoogleVisionLabelImage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
+use App\Jobs\GoogleVisionRemoveFaces;
 use App\Http\Requests\AnnouncementReq;
 use Illuminate\Support\Facades\Storage;
 use App\Jobs\GoogleVisionSafeSearchImage;
@@ -113,28 +114,23 @@ class AnnouncementController extends Controller
                 
                 Storage::move($image, $newFileName);
 
-               
-
-                dispatch(new ResizeImage(
-                    $newFileName,
-                    300,
-                    150
-                ));
-                dispatch(new ResizeImage(
-                    $newFileName,
-                    400,
-                    300
-                ));
                 
                 $i->file = $newFileName;
                 $i->announcement_id = $announcement->id;
                 
 
                 $i->save();
-                dispatch(new GoogleVisionSafeSearchImage($i->id));
-                dispatch(new GoogleVisionLabelImage($i->id));
+                
+                GoogleVisionSafeSearchImage::withChain([
+                    new GoogleVisionLabelImage($i->id),
+                    new GoogleVisionRemoveFaces($i->id),
 
+                    new ResizeImage($i->file,300,150),
+                    new ResizeImage($i->file,400,300),
                     
+
+                ])->dispatch($i->id);
+
 
             }
 
