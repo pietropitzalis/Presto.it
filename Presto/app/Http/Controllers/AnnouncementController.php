@@ -117,7 +117,6 @@ class AnnouncementController extends Controller
                 
                 $i->file = $newFileName;
                 $i->announcement_id = $announcement->id;
-                
 
                 $i->save();
                 
@@ -133,7 +132,7 @@ class AnnouncementController extends Controller
 
 
             }
-
+            
             File::deleteDirectory(storage_path("/app/public/temp/{$uniqueSecret}"));
 
             // dd($request->all());

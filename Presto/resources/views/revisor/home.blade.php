@@ -3,10 +3,10 @@
     @if ($announcement)
 
 
-        <div class="container my-5">
-            <div class="row justify-content-center my-5">
-                <div class="col-md-12">
-                    <div class="card">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12  mt-5 pt-5">
+                    <div class="card  mt-5 pt-5">
                         <div class="card-header">
                             Annuncio: #{{ $announcement->id }}
                         </div>
@@ -92,13 +92,13 @@
 
         <div class="row mb-5">
 
-            <div class="col-md-4 text-end">
+            <div class="col-md-4 text-end  pt-5">
                 <form action="{{ route('revisor.reject', $announcement->id) }}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-danger">Rifiuta</button>
                 </form>
             </div>
-            <div class="col-md-4 text-end">
+            <div class="col-md-4 text-end pt-5">
                 <form action="{{ route('revisor.accept', $announcement->id) }}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-success">Accetta</button>
@@ -110,14 +110,14 @@
 
     @else
         <div class="container text-center">
-            <div class="col-12">
+            <div class="col-12  pt-5">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6  mt-5 pt-5">
                         <div class="col-12 text-center bg-danger mt-3 my-5">
-                            <b class="fs-1">Non ci sono annunci da revisionare</b>
+                            <b class="fs-1">{{__('ui.404_revisor')}}</b>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6  mt-5 pt-5">
                         <img src="/img/404.jpg" class="img-fluid" alt="">
                     </div>
                 </div>

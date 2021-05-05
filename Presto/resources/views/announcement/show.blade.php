@@ -1,9 +1,9 @@
 <x-layout>
 
 
-    <div class="row mt-5">
-        <div class="container col-12">
-            <div class="col-md-6 offset-md-3 mt-5 text-center ">
+    <div class="row">
+        <div class="container col-12 my-5 pt-5">
+            <div class="col-md-6 offset-md-3 mt-5 text-center my-5 pt-5">
                 <h1>{{ __('ui.detail') }}</h1>
             </div>
         </div>
@@ -13,7 +13,7 @@
         <button class="btn btn-custom"> <a href="{{ route('announcement.index') }}" class="link-cat">
                 <i class="fs-2 fas fa-arrow-circle-left"></i> </a></button>
         <div class="row justify-space-between justify-content-center">
-            <div class="col-md-8 shadow">
+            <div class="col-md-8 shadow ">
                 <div class="row my-5">
                     <div class="col-8">
                         

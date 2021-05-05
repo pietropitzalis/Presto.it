@@ -10,17 +10,21 @@
 
 
 
-            <div class="text-center my-5">
-                <h1>Annunci in <b>{{ $category->name }}</b></h1>
-                <h3>Categoria: {{ $category->name }}</h3>
-            </div>
+           
 
-            <button class="btn btn-custom"><a class="link-cat" href="{{ URL::previous() }}"><i
-                class="fs-1 fas fa-arrow-circle-left"></a></i></button>
+            
                 
                 @foreach ($announcements as $announcement)
-                    <div class="container my-5">
+                    <div class="container">
                         <div class="row">
+                            <div class="text-center my-5 pt-5 ann">
+                                <h1>Annunci in <b>{{ $category->name }}</b></h1>
+                                <h3>Categoria: {{ $category->name }}</h3>
+                            </div>
+                            <div>
+                            <button class="btn btn-custom col-1"><a class="link-cat" href="{{ URL::previous() }}"><i
+                                class="fs-1 fas fa-arrow-circle-left"></a></i></button>
+                            </div>
                             <div class="col-6 offset-md-3 card card-custom hover shadow">
                                 <div class="row my-3 mx-auto">
                                     <div class="col-6">
@@ -84,14 +88,14 @@
                 <div class="container text-center">
                     <div class="col-12">
                         <div class="row align-items-center">
-                            <div class="col-md-6">
+                            <div class="col-md-6 my-5 pt-5">
                                 <h1><b>{{__('ui.category')}} {{$category->name}}</b></h1>
                                 <button class="text-center my-5 btn btn-custom">
                                     <a class="link-cat" href="{{ route('announcement.index') }}">
                                         {{__('ui.search_other')}}</a>
                                 </button>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 my-5 pt-5">
                                 <img src="/img/404.jpg" class="img-fluid" alt="">
                             </div>
                         </div>

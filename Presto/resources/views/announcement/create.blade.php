@@ -1,6 +1,11 @@
 <x-layout>
-    @if ($errors->any())
-        <div class="alert alert-danger">
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5 pt-5">
+                @if ($errors->any())
+        <div class="alert alert-danger mt-5">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -8,11 +13,7 @@
             </ul>
         </div>
     @endif
-
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6 offset-md-3">
-                <h1 class="my-5 text-center">{{ __('ui.insert_announcement') }}</h1>
+                <h1 class="my-5 text-center  mt-5 pt-5">{{ __('ui.insert_announcement') }}</h1>
 
 
                 {{-- <h3>DEBUG:: SECRET {{ $uniqueSecret }}</h3> --}}

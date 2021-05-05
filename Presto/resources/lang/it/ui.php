@@ -24,7 +24,7 @@ Nessuna commisione e affidabilità al 100%',
 'profile'=>'Profilo',
 
 //INDEX
-'announcement'=>'Annuncio',
+'announcement'=>'Annunci',
 'announcements'=>'Annunci',
 'created_on'=>'Creato il:',
 'created_by'=>'Creato da:',
@@ -62,6 +62,16 @@ Nessuna commisione e affidabilità al 100%',
 //contatti
 'contact'=>'Diventa un revisore',
 
+//404
+'404_1'=>'Non ci sono annunci qui!',
+'404_sub'=>'Torna alla home',
+
+//revisor
+'title_revisor'=>'Vuoi diventare un revisore e lavorare con noi? Compila il form!',
+'send'=>'Invia',
+'name'=>'Inserisci il tuo nome',
+'presto'=>'Convinci il team di Presto.it a sceglierti come revisore',
+'404_revisor'=>'Non ci sono annunci da revisionare',
 ];
 
 

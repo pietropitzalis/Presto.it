@@ -40,6 +40,7 @@ class GoogleVisionLabelImage implements ShouldQueue
         if (!$i) {
            return;
         }
+        
         $image = file_get_contents(storage_path('/app/' . $i->file));
 
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));

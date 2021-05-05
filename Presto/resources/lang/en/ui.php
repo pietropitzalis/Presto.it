@@ -66,7 +66,16 @@ No commission and 100% reliability',
 //contatti
 'contact'=>'Became a revisor',
 
+//404
+'404_1'=>'There are no ads here!',
+'404_sub'=>'Back to home',
 
+//revisor
+'title_revisor'=>'Do you want to become an auditor and work with us? Fill out the form!',
+'send'=>'Send',
+'name'=>'Insert your name',
+'presto'=>'Convince the Presto.it team to choose you as a reviewer',
+'404_revisor'=>'There are no ads to review',
 ];
 
 

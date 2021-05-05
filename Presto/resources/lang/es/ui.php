@@ -66,6 +66,16 @@ Nuestro sitio está disponible en cualquier tipo de dispositivo sin ningún prob
 //contatti
 'contact'=>'Conviértete en revisor',
 
+//404
+'404_1'=>'No hay anuncios aquí!',
+'404_sub'=>'De vuelta a casa',
+
+//revisor
+'title_revisor'=>'¿Quieres convertirte en auditor y trabajar con nosotros? ¡Rellenar el formulario!',
+'send'=>'Enviar',
+'name'=>'Inserta tu nombre',
+'presto'=>'Convence al equipo de Presto.it de que te elija como revisor',
+'404_revisor'=>'No hay anuncios para revisar'
 ];
 
 
