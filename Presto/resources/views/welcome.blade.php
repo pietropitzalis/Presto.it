@@ -14,31 +14,30 @@
                 <div class="col-4 col-md-6 text-start mt-5">
                     <h1 class="title nav-link mt-5">Presto<span style="color:#CD253F">.</span>it</h1>
                     <h2 class="lead subTitle"> {{ __('ui.welcome') }}</h2>
-                    <div class="d-flex justify-content-start mt-5 search">
-                        <form action="{{ route('announcement.search') }}" method="GET">
-                        <div class="searchbar">
-                            
-                                <input type="text" name="q" placeholder="Ricerca..." id="form1" class="search_input" />
-                                <label class="form-label " for="form1"></label>
-                                <button type="submit" class="search_icon" >
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            
-                        </div>
-                    </form>
-                    </div>
                 </div>
             </div>
 
 
     </header>
 
-    <div class="container h-100">
-    </div>
+    
     <div class="container">
+        <div class="d-flex justify-content-center mt-5 search">
+            <form action="{{ route('announcement.search') }}" method="GET">
+            <div class="searchbar">
+                
+                    <input type="text" name="q" placeholder="Ricerca..." id="form1" class="search_input" />
+                    <label class="form-label " for="form1"></label>
+                    <button type="submit" class="search_icon" >
+                        <i class="fas fa-search"></i>
+                    </button>
+                
+            </div>
+        </form>
+        </div>
         <h6 class="tre fs-1 mt-5 text-center">{{ __('ui.slogan') }}<button class="ms-4 btn btn-custom"><a
                     class="link-cat fs-4" href="{{ route('announcement.create') }}"><i
-                        class="fs-5 me-2 far fa-plus-square"></i>{{ __('ui.announcement') }}</a></button></h6>
+                        class="fs-5 me-2 far fa-plus-square"></i>{{ __('ui.insert_ad') }}</a></button></h6>
         {{-- SEZIONE CATEGORIE --}}
         <div class="row justify-content-center my-5">
             <h2 class="text-center my-5">{{ __('ui.explore_category') }}</h2>
@@ -56,8 +55,8 @@
             @endforeach
         </div>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner mt-5">
+        <div id="carouselExampleControls" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner my-5">
                 <div class="carousel-item active carousel-custom">
                     <div class="mb-3">
                         <div class="row justify-content-center">

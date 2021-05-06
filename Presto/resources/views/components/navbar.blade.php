@@ -66,7 +66,7 @@
                             <span>{{ \App\Models\Announcement::toBeRevisionedCount() }}</span> </a>
                     </li>
                 @endif
-                <li class="nav-item ms-3 dropdown me-5">
+                <li class="nav-item ms-3 dropdown">
                     <a class="nav-link tre fs-5 dropdown-toggle me-5 " href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fs-5 me-2 fa-user-check"></i>{{ __('ui.hello') }}{{ Auth::user()->name }}
